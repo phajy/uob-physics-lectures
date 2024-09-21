@@ -1,0 +1,7 @@
+# Preface {.unnumbered}
+
+This is a template that can be used to prepare Physics lecture notes at the University of Bristol.
+
+This is a Quarto book.
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.

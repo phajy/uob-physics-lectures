@@ -1,0 +1,30 @@
+project:
+  type: book
+
+book:
+  favicon: uob.jpg
+  title: "Bristol Physics"
+  author: "Andrew Young"
+  date: last-modified
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+  downloads: pdf
+
+bibliography: references.bib
+
+editor:
+  render-on-save: true
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
+
+  pdf:
+    documentclass: scrreprt
+    papersize: A4
