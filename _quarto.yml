@@ -1,6 +1,9 @@
 project:
   type: book
 
+execute:
+  freeze: auto
+
 book:
   favicon: uob.jpg
   title: "Bristol Physics"
