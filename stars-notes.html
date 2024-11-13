@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Measurements on Stars – Bristol Physics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./summary.html" rel="next">
+<link href="./intro.html" rel="prev">
+<link href="./uob.jpg" rel="icon" type="image/jpeg">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./stars-notes.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Stars</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Bristol Physics</a> 
+        <div class="sidebar-tools-main">
+    <a href="./Bristol-Physics.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./stars-notes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Stars</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#setting-the-scene" id="toc-setting-the-scene" class="nav-link active" data-scroll-target="#setting-the-scene"><span class="header-section-number">2.1</span> Setting the Scene</a></li>
+  <li><a href="#distances-trigonometric-parallax" id="toc-distances-trigonometric-parallax" class="nav-link" data-scroll-target="#distances-trigonometric-parallax"><span class="header-section-number">2.2</span> Distances: Trigonometric Parallax</a></li>
+  <li><a href="#flux-measurements" id="toc-flux-measurements" class="nav-link" data-scroll-target="#flux-measurements"><span class="header-section-number">2.3</span> Flux Measurements</a></li>
+  <li><a href="#luminosity" id="toc-luminosity" class="nav-link" data-scroll-target="#luminosity"><span class="header-section-number">2.4</span> Luminosity</a></li>
+  <li><a href="#magnitudes" id="toc-magnitudes" class="nav-link" data-scroll-target="#magnitudes"><span class="header-section-number">2.5</span> Magnitudes</a></li>
+  <li><a href="#absolute-magnitude" id="toc-absolute-magnitude" class="nav-link" data-scroll-target="#absolute-magnitude"><span class="header-section-number">2.6</span> Absolute Magnitude</a></li>
+  <li><a href="#bolometric-magnitudes" id="toc-bolometric-magnitudes" class="nav-link" data-scroll-target="#bolometric-magnitudes"><span class="header-section-number">2.7</span> Bolometric Magnitudes</a></li>
+  <li><a href="#mass-the-sun" id="toc-mass-the-sun" class="nav-link" data-scroll-target="#mass-the-sun"><span class="header-section-number">2.8</span> Mass: The Sun</a></li>
+  <li><a href="#binary-stars" id="toc-binary-stars" class="nav-link" data-scroll-target="#binary-stars"><span class="header-section-number">2.9</span> Binary Stars</a></li>
+  <li><a href="#surface-temperatures-spectra" id="toc-surface-temperatures-spectra" class="nav-link" data-scroll-target="#surface-temperatures-spectra"><span class="header-section-number">2.10</span> Surface Temperatures: Spectra</a></li>
+  <li><a href="#colour-indices" id="toc-colour-indices" class="nav-link" data-scroll-target="#colour-indices"><span class="header-section-number">2.11</span> Colour Indices</a></li>
+  <li><a href="#line-spectra" id="toc-line-spectra" class="nav-link" data-scroll-target="#line-spectra"><span class="header-section-number">2.12</span> Line Spectra</a></li>
+  <li><a href="#spectral-classification" id="toc-spectral-classification" class="nav-link" data-scroll-target="#spectral-classification"><span class="header-section-number">2.13</span> Spectral Classification</a></li>
+  <li><a href="#balmer-lines" id="toc-balmer-lines" class="nav-link" data-scroll-target="#balmer-lines"><span class="header-section-number">2.14</span> Balmer Lines</a></li>
+  <li><a href="#other-lines" id="toc-other-lines" class="nav-link" data-scroll-target="#other-lines"><span class="header-section-number">2.15</span> Other Lines</a></li>
+  <li><a href="#line-widths" id="toc-line-widths" class="nav-link" data-scroll-target="#line-widths"><span class="header-section-number">2.16</span> Line Widths</a></li>
+  <li><a href="#chemical-composition" id="toc-chemical-composition" class="nav-link" data-scroll-target="#chemical-composition"><span class="header-section-number">2.17</span> Chemical Composition</a></li>
+  <li><a href="#stellar-characteristics" id="toc-stellar-characteristics" class="nav-link" data-scroll-target="#stellar-characteristics"><span class="header-section-number">3</span> Stellar Characteristics</a>
+  <ul class="collapse">
+  <li><a href="#the-h-r-diagram" id="toc-the-h-r-diagram" class="nav-link" data-scroll-target="#the-h-r-diagram"><span class="header-section-number">3.1</span> The H-R Diagram</a></li>
+  <li><a href="#observations" id="toc-observations" class="nav-link" data-scroll-target="#observations"><span class="header-section-number">3.2</span> Observations</a></li>
+  <li><a href="#the-mass-luminosity-relation" id="toc-the-mass-luminosity-relation" class="nav-link" data-scroll-target="#the-mass-luminosity-relation"><span class="header-section-number">3.3</span> The Mass-Luminosity Relation</a></li>
+  </ul></li>
+  <li><a href="#the-internal-structure-of-stars" id="toc-the-internal-structure-of-stars" class="nav-link" data-scroll-target="#the-internal-structure-of-stars"><span class="header-section-number">4</span> The Internal Structure of Stars</a>
+  <ul class="collapse">
+  <li><a href="#hydrostatic-equilibrium" id="toc-hydrostatic-equilibrium" class="nav-link" data-scroll-target="#hydrostatic-equilibrium"><span class="header-section-number">4.1</span> Hydrostatic Equilibrium</a></li>
+  <li><a href="#thermal-gas-pressure" id="toc-thermal-gas-pressure" class="nav-link" data-scroll-target="#thermal-gas-pressure"><span class="header-section-number">4.2</span> Thermal Gas Pressure</a></li>
+  <li><a href="#radiation-pressure" id="toc-radiation-pressure" class="nav-link" data-scroll-target="#radiation-pressure"><span class="header-section-number">4.3</span> Radiation Pressure</a></li>
+  <li><a href="#degeneracy-pressure" id="toc-degeneracy-pressure" class="nav-link" data-scroll-target="#degeneracy-pressure"><span class="header-section-number">4.4</span> Degeneracy Pressure</a></li>
+  <li><a href="#energy-sources-in-stars" id="toc-energy-sources-in-stars" class="nav-link" data-scroll-target="#energy-sources-in-stars"><span class="header-section-number">4.5</span> Energy Sources in Stars</a></li>
+  <li><a href="#nuclear-energy" id="toc-nuclear-energy" class="nav-link" data-scroll-target="#nuclear-energy"><span class="header-section-number">4.6</span> Nuclear Energy</a></li>
+  <li><a href="#hydrogen-burning" id="toc-hydrogen-burning" class="nav-link" data-scroll-target="#hydrogen-burning"><span class="header-section-number">4.7</span> Hydrogen Burning</a></li>
+  <li><a href="#helium-burning" id="toc-helium-burning" class="nav-link" data-scroll-target="#helium-burning"><span class="header-section-number">4.8</span> Helium Burning</a></li>
+  <li><a href="#carbon-burning" id="toc-carbon-burning" class="nav-link" data-scroll-target="#carbon-burning"><span class="header-section-number">4.9</span> Carbon Burning</a></li>
+  <li><a href="#stability-of-energy-generation" id="toc-stability-of-energy-generation" class="nav-link" data-scroll-target="#stability-of-energy-generation"><span class="header-section-number">4.10</span> Stability of Energy Generation</a></li>
+  </ul></li>
+  <li><a href="#stellar-evolution" id="toc-stellar-evolution" class="nav-link" data-scroll-target="#stellar-evolution"><span class="header-section-number">5</span> Stellar Evolution</a>
+  <ul class="collapse">
+  <li><a href="#star-formation" id="toc-star-formation" class="nav-link" data-scroll-target="#star-formation"><span class="header-section-number">5.1</span> Star Formation</a></li>
+  <li><a href="#phases-during-star-formation" id="toc-phases-during-star-formation" class="nav-link" data-scroll-target="#phases-during-star-formation"><span class="header-section-number">5.2</span> Phases During Star Formation</a></li>
+  <li><a href="#main-sequence-stars" id="toc-main-sequence-stars" class="nav-link" data-scroll-target="#main-sequence-stars"><span class="header-section-number">5.3</span> Main Sequence Stars</a></li>
+  <li><a href="#post-main-sequence-evolution" id="toc-post-main-sequence-evolution" class="nav-link" data-scroll-target="#post-main-sequence-evolution"><span class="header-section-number">5.4</span> Post Main Sequence Evolution</a></li>
+  <li><a href="#a-5-m_odot-star" id="toc-a-5-m_odot-star" class="nav-link" data-scroll-target="#a-5-m_odot-star"><span class="header-section-number">5.5</span> A <span class="math inline">\(5 M_{\odot}\)</span> Star</a></li>
+  <li><a href="#a-1-m_odot-star" id="toc-a-1-m_odot-star" class="nav-link" data-scroll-target="#a-1-m_odot-star"><span class="header-section-number">5.6</span> A <span class="math inline">\(1 M_{\odot}\)</span> Star</a></li>
+  <li><a href="#chemical-composition-1" id="toc-chemical-composition-1" class="nav-link" data-scroll-target="#chemical-composition-1"><span class="header-section-number">5.7</span> Chemical Composition</a></li>
+  <li><a href="#white-dwarfs" id="toc-white-dwarfs" class="nav-link" data-scroll-target="#white-dwarfs"><span class="header-section-number">5.8</span> White Dwarfs</a></li>
+  <li><a href="#supernovae" id="toc-supernovae" class="nav-link" data-scroll-target="#supernovae"><span class="header-section-number">5.9</span> Supernovae</a></li>
+  <li><a href="#core-collapse-sne" id="toc-core-collapse-sne" class="nav-link" data-scroll-target="#core-collapse-sne"><span class="header-section-number">5.10</span> Core Collapse SNe</a></li>
+  <li><a href="#neutron-stars-and-pulsars" id="toc-neutron-stars-and-pulsars" class="nav-link" data-scroll-target="#neutron-stars-and-pulsars"><span class="header-section-number">5.11</span> Neutron Stars and Pulsars</a></li>
+  </ul></li>
+  <li><a href="#stellar-activity" id="toc-stellar-activity" class="nav-link" data-scroll-target="#stellar-activity"><span class="header-section-number">6</span> Stellar Activity</a>
+  <ul class="collapse">
+  <li><a href="#the-structure-of-the-sun" id="toc-the-structure-of-the-sun" class="nav-link" data-scroll-target="#the-structure-of-the-sun"><span class="header-section-number">6.1</span> The Structure of the Sun</a></li>
+  <li><a href="#ionized-gas-in-magnetic-fields" id="toc-ionized-gas-in-magnetic-fields" class="nav-link" data-scroll-target="#ionized-gas-in-magnetic-fields"><span class="header-section-number">6.2</span> Ionized Gas in Magnetic Fields</a></li>
+  <li><a href="#the-magnetic-field-of-the-sun" id="toc-the-magnetic-field-of-the-sun" class="nav-link" data-scroll-target="#the-magnetic-field-of-the-sun"><span class="header-section-number">6.3</span> The Magnetic Field of the Sun</a></li>
+  <li><a href="#sunspots" id="toc-sunspots" class="nav-link" data-scroll-target="#sunspots"><span class="header-section-number">6.4</span> Sunspots</a></li>
+  <li><a href="#the-solar-corona-and-solar-wind" id="toc-the-solar-corona-and-solar-wind" class="nav-link" data-scroll-target="#the-solar-corona-and-solar-wind"><span class="header-section-number">6.5</span> The Solar Corona and Solar Wind</a></li>
+  <li><a href="#solar-flares" id="toc-solar-flares" class="nav-link" data-scroll-target="#solar-flares"><span class="header-section-number">6.6</span> Solar Flares</a></li>
+  <li><a href="#activity-on-other-stars" id="toc-activity-on-other-stars" class="nav-link" data-scroll-target="#activity-on-other-stars"><span class="header-section-number">6.7</span> Activity on Other Stars</a></li>
+  </ul></li>
+  <li><a href="#binary-stars-1" id="toc-binary-stars-1" class="nav-link" data-scroll-target="#binary-stars-1"><span class="header-section-number">7</span> Binary Stars</a>
+  <ul class="collapse">
+  <li><a href="#spectroscopic-binaries" id="toc-spectroscopic-binaries" class="nav-link" data-scroll-target="#spectroscopic-binaries"><span class="header-section-number">7.1</span> Spectroscopic Binaries</a></li>
+  <li><a href="#eclipsing-binaries" id="toc-eclipsing-binaries" class="nav-link" data-scroll-target="#eclipsing-binaries"><span class="header-section-number">7.2</span> Eclipsing Binaries</a></li>
+  <li><a href="#close-binaries" id="toc-close-binaries" class="nav-link" data-scroll-target="#close-binaries"><span class="header-section-number">7.3</span> Close Binaries</a></li>
+  <li><a href="#accretion-discs" id="toc-accretion-discs" class="nav-link" data-scroll-target="#accretion-discs"><span class="header-section-number">7.4</span> Accretion Discs</a></li>
+  <li><a href="#novae" id="toc-novae" class="nav-link" data-scroll-target="#novae"><span class="header-section-number">7.5</span> Novae</a></li>
+  <li><a href="#x-ray-sources" id="toc-x-ray-sources" class="nav-link" data-scroll-target="#x-ray-sources"><span class="header-section-number">7.6</span> X-ray Sources</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Measurements on Stars</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="setting-the-scene" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="setting-the-scene"><span class="header-section-number">2.1</span> Setting the Scene</h2>
+<p>The Sun and all the stars which we can see at night are part of one huge system called the Galaxy (often referred to as the Milky Way Galaxy). The Galaxy is basically disc shaped, with a spheroidal bulge in the centre, and contains about <span class="math inline">\(10^{11}\)</span> stars in total. It also contains gas and dust between the stars (the interstellar medium). In this section of the course we will consider the observed properties of stars and how we can deduce their physical characteristics.</p>
+</section>
+<section id="distances-trigonometric-parallax" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="distances-trigonometric-parallax"><span class="header-section-number">2.2</span> Distances: Trigonometric Parallax</h2>
+<p>Observing from different locations changes the apparent position of a star on the sky, relative to more distant stars. However, different observers on the Earth see no measurable effect; even the nearest stars are too distant for this to work. We therefore need the longer baseline provided by the movement of the Earth around the Sun. Depending how near the star is to the Ecliptic (the apparent path of the Sun around the sky in the course of a year), the star will trace out a more or less elongated ellipse (if it is near the Ecliptic Pole the motion will be a circle), but with its semi-major axis depending only on the star’s distance. This angle is called the star’s annual parallax, <span class="math inline">\(p\)</span>. By simple trigonometry, with a baseline of 1 AU (the mean Earth-Sun distance, approximately <span class="math inline">\(1.5 \times\)</span> <span class="math inline">\(10^{11} \mathrm{~m}\)</span> ), and using the small angle approximation, we have</p>
+<p><span class="math display">\[
+\begin{aligned}
+p(\text { radians }) &amp; \simeq \tan p=1 \mathrm{AU} / d \\
+\text { or } d(\mathrm{AU}) &amp; =1 / p \text { (radians) }
+\end{aligned}
+\]</span></p>
+<p>If we now define the unit of distance 1 parsec to be the distance at which the parallax is exactly one second of arc, then</p>
+<p><span class="math display">\[
+d(\mathrm{pc})=1 / p(\operatorname{arcsec})
+\]</span></p>
+<p>But there are <span class="math inline">\(3600 \times(180 / \pi)=206265\)</span> arc seconds in 1 radian, so there must be the same number of AU in a parsec. Thus <span class="math inline">\(1 \mathrm{pc}=3.086 \times 10^{16} \mathrm{~m}\)</span>. (This is also 3.26 light years). A stellar parallax was first measured in 1838 by F.W. Bessel. He measured <span class="math inline">\(p=0.29^{\prime \prime}\)</span> for the star 61 Cygni, implying <span class="math inline">\(d=3.4 \mathrm{pc}\)</span>. He chose this star as he knew that it had a large proper motion, that is a steady movement across the sky relative to other stars due to its own velocity. If all stars have similar velocities, then the nearer ones will look to move faster across the sky. Proper motions (denoted by the symbol <span class="math inline">\(\mu\)</span> ) are usually small, much less than <span class="math inline">\(1^{\prime \prime}\)</span> per year. Bessel was correct that 61 Cygni is one of the closest stars; the closest of all is <span class="math inline">\(\alpha\)</span> Centauri at 1.3 pc . Until recently, trigonometric parallaxes could be measured only for a small number of stars. The atmosphere blurs even a point source into a spot at least 1 ” across (the “seeing”), so even with the best observations (on bright stars) it is impossible to measure the centre of the image to much better than <span class="math inline">\(0.01^{\prime \prime}\)</span>. This clearly limits parallax measurements to stars with distances less than about 100 pc . The Gliese Catalogue of Nearby Stars contains about 2000 stars within 25 pc of the Sun. However, the satellite Hipparcos - the HIgh Precision Parallax Collecting Satellite - measured parallaxes with an accuracy of better than a milliarcsec (mas). Its final catalogue (1997) contained about 120000 stars, including 20000 with <span class="math inline">\(d \leq 100 \mathrm{pc}\)</span> and better than <span class="math inline">\(10 \%\)</span> accuracy. In the next decade this will be surpassed by the GAIA mission which will measure distances accurately out to several kpc. (The Galaxy’s stellar disc is about 15 kpc in radius).</p>
+</section>
+<section id="flux-measurements" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="flux-measurements"><span class="header-section-number">2.3</span> Flux Measurements</h2>
+<p>Beyond the distance where trigonometric parallax can be used, we have to rely on less direct methods. From the usual inverse square law of the propagation of light, the observed flux from a star of luminosity <span class="math inline">\(L\)</span> at distance <span class="math inline">\(d\)</span> is</p>
+<p><span class="math display">\[
+F=\frac{L}{4 \pi d^{2}} .
+\]</span></p>
+<p>Thus for stars for which we have obtained a distance from parallax, we can calculate</p>
+<p><span class="math display">\[
+L=4 \pi d^{2} F .
+\]</span></p>
+<p>If we can find other stars which look to be of the same type (e.g.&nbsp;have the same colour or spectrum) we can reverse the process. That is, if we know <span class="math inline">\(L\)</span> (i.e.&nbsp;we assume that all stars of a given type are ‘standard candles’ with the same luminosity) and measure <span class="math inline">\(F\)</span> we can calculate</p>
+<p><span class="math display">\[
+d=(L / 4 \pi F)^{1 / 2} .
+\]</span></p>
+<p>This method is improved if we look at star clusters, since we can average over all the estimated distances for different sorts of stars. However, we also need to assume that none of the light from the stars is absorbed before it gets to us (see below). A related method is to use variable stars. For instance, certain variable stars called Cepheids (after the first known example, <span class="math inline">\(\delta\)</span> Cephei) are observed to have a very characteristic ‘light curve’, i.e.&nbsp;variation in brightness as a function of time. The variability is due to the star pulsating and the period of the pulsation, <span class="math inline">\(P\)</span>, is related to the mass of the star, as also is the luminosity <span class="math inline">\(L\)</span>. Thus there should be a well determined relationship between <span class="math inline">\(P\)</span> and <span class="math inline">\(L\)</span>. In this case, we need only measure <span class="math inline">\(P\)</span> to deduce <span class="math inline">\(L\)</span> and then the measured flux <span class="math inline">\(F\)</span> gives us the distance as before. Of course, as with the previous method, we first need to calibrate the <span class="math inline">\(P-L\)</span> relation from Cepheids of known distance. With the Hubble Space Telescope we can observe Cepheids in other galaxies outside our own, up to distances of <span class="math inline">\(\sim 20 \mathrm{Mpc}\)</span>.</p>
+</section>
+<section id="luminosity" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="luminosity"><span class="header-section-number">2.4</span> Luminosity</h2>
+<p>As above, if we know the distance of a star and measure its flux (in <span class="math inline">\(\mathrm{Wm}^{-2}\)</span> ), then we can determine its luminosity, that is its power output in Watts, from the inverse square law. The flux from the Sun (called the Solar Constant) is about 1.37 kW per square metre, so from its distance, <span class="math inline">\(1.5 \times 10^{11} \mathrm{~m}\)</span>, we can deduce a luminosity of <span class="math inline">\(3.86 \times 10^{26} \mathrm{~W}\)</span>. This value is denoted <span class="math inline">\(1 L_{\odot}\)</span> and is a convenient unit in which to measure the luminosities of other stars.</p>
+</section>
+<section id="magnitudes" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="magnitudes"><span class="header-section-number">2.5</span> Magnitudes</h2>
+<p>However, optical astronomers traditionally use a logarithmic magnitude scale instead of fluxes and luminosities. This derives from the Greek astronomer Hipparchus (1st Century BC) who classified stars into those ‘of the first magnitude’ (the brightest ones), those ‘of the second magnitude’, and so on. The faintest stars visible were of the sixth magnitude. It turns out that the eye has a logarithmic response to light, so that the ratio of observed flux from, say, a fourth magnitude star compared to a fifth magnitude star is the same as that between first and second magnitude stars. In the 19th Century, Pogson found that a one magnitude difference corresponded to a flux ratio of about 2.5 . He therefore quantified the magnitude system so that a 5 magnitude range (e.g.&nbsp;1st to 6th magnitude) corresponded to exactly a factor of 100 (very close to <span class="math inline">\(2.5^{5}\)</span> ).</p>
+<p>Thus we can write the apparent magnitude of a star as</p>
+<p><span class="math display">\[
+m=\text { constant }-2.5 \log _{10} F
+\]</span></p>
+<p>the minus sign indicating that magnitudes get larger as the apparent flux gets smaller. Note that the 2.5 in this equation is not the factor corresponding to a 1 magnitude change (which is strictly 2.512), but reflects the fact that a factor 10 in flux corresponds to 2.5 magnitudes. The constant is chosen so that the measured flux gives the correct magnitude for some standard star; specifically Vega is defined to have apparent magnitude <span class="math inline">\(m=0.0\)</span>. Stars brighter than Vega have negative apparent magnitudes; Sirius has <span class="math inline">\(m=-1.5\)</span> and the Sun -26.8 . Regardless of the value of the constant, we can see that the ratio of fluxes of two stars corresponds to the difference in their magnitude</p>
+<p><span class="math display">\[
+m_{1}-m_{2}=-2.5 \log F_{1}+2.5 \log F_{2}=2.5 \log \left(F_{2} / F_{1}\right)
+\]</span></p>
+<p>Reversing this, we also have</p>
+<p><span class="math display">\[
+\frac{F_{1}}{F_{2}}=10^{0.4\left(m_{2}-m_{1}\right)} .
+\]</span></p>
+<p>As an example, consider a double star with an unresolved magnitude of +5.0 . If one star is known to be twice as bright as the other then we can write <span class="math inline">\(F_{1}=2 F_{2}\)</span> and</p>
+<p><span class="math display">\[
+m_{2}-m_{1}=2.5 \log \left(F_{1} / F_{2}\right)=2.5 \log 2=0.75
+\]</span></p>
+<p>But also <span class="math inline">\(F_{2}\)</span> is <span class="math inline">\(1 / 3\)</span> of the total combined flux so</p>
+<p><span class="math display">\[
+m_{2}-5.0=2.5 \log 3=1.19
+\]</span></p>
+<p>Thus <span class="math inline">\(m_{2}=6.19\)</span> and <span class="math inline">\(m_{1}=5.44\)</span>. As above, the limit of the human eye is at about <span class="math inline">\(m=6\)</span>. With binoculars this can be extended to about <span class="math inline">\(m=10\)</span>. With the Hubble Space Telescope the limit is around <span class="math inline">\(m=29\)</span>, about 30 magnitudes fainter than Sirius. From our definition this corresponds to a factor <span class="math inline">\(10^{12}\)</span> in flux. (The same as that between the Sun and a moderately faint naked eye star).</p>
+</section>
+<section id="absolute-magnitude" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="absolute-magnitude"><span class="header-section-number">2.6</span> Absolute Magnitude</h2>
+<p>We can obtain an equivalent logarithmic measure of luminosity if we set the absolute magnitude to be</p>
+<p><span class="math display">\[
+M=\text { constant }-2.5 \log L
+\]</span></p>
+<p>In this case we set the constant so that for a star at a distance of 10pc the apparent magnitude <span class="math inline">\(m\)</span> and the absolute magnitude <span class="math inline">\(M\)</span> are the same. Or, put another way, the absolute magnitude is the apparent magnitude a star would have if we placed it 10pc away. If the star is really at a distance <span class="math inline">\(d\)</span> parsecs then, writing <span class="math inline">\(F(d)\)</span> for the flux,</p>
+<p><span class="math display">\[
+\frac{F(d)}{F(10)}=\frac{L}{4 \pi d^{2}} \frac{4 \pi 10^{2}}{L}=\left(\frac{10}{d}\right)^{2} .
+\]</span></p>
+<p>Thus</p>
+<p><span class="math display">\[
+m-M=2.5 \log \frac{F(10)}{F(d)}=5 \log \left(\frac{d}{10}\right)=5 \log d-5
+\]</span></p>
+<p><span class="math inline">\(m-M\)</span> is called the distance modulus. It is zero for <span class="math inline">\(d=10 \mathrm{pc},+5\)</span> for <span class="math inline">\(d=100 \mathrm{pc}\)</span>, etc. For example, Sirius has a parallax of <span class="math inline">\(0.38^{\prime \prime}\)</span> and apparent magnitude <span class="math inline">\(m=-1.5\)</span>.</p>
+<p><span class="math display">\[
+d=1 / 0.38=2.63 \mathrm{pc}
+\]</span></p>
+<p><span class="math display">\[
+\begin{gathered}
+m-M=-1.50-M=5 \log 2.63-5=-2.90 \\
+\Rightarrow M=+1.40
+\end{gathered}
+\]</span></p>
+<p>Fluxes from distant stars may be reduced by absorption by dust particles in the ISM. If the flux is reduced by a factor <span class="math inline">\(a(&lt;1)\)</span> from <span class="math inline">\(F\)</span> to <span class="math inline">\(a F\)</span>, then the observed magnitude will change to</p>
+<p><span class="math display">\[
+m^{\prime}=m-2.5 \log a=m+A
+\]</span></p>
+<p>where <span class="math inline">\(A \equiv 2.5 \log (1 / a)\)</span> is the absorption in magnitudes, also called the extinction. On average in the Galaxy, the absorption is about 1 magnitude per kpc of ISM. However, the density of the ISM rises towards the middle of the Galaxy, so looking towards the Galactic Centre itself, <span class="math inline">\(A\)</span> is in excess of 30 magnitudes in the blue part of the spectrum. (Absorption is less at longer wavelengths).</p>
+</section>
+<section id="bolometric-magnitudes" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="bolometric-magnitudes"><span class="header-section-number">2.7</span> Bolometric Magnitudes</h2>
+<p>The bolometric magnitude, <span class="math inline">\(m_{b o l}\)</span>, (or the corresponding flux) is that which would be obtained if we had a detector sensitive to all wavelengths. What we have been implicitly talking about so far, though, is the visual magnitude of a star, measuring the amount of light to which the eye is sensitive. Although the eye is responsive to a quite wide range, <span class="math inline">\(\sim 400 \mathrm{~nm}\)</span> to 750 nm , sensitivity is greatest for 500 to 600 nm and magnitudes corresponding to flux in this range are called visual magnitudes, <span class="math inline">\(m_{v}\)</span>. The difference between <span class="math inline">\(m_{v}\)</span> and <span class="math inline">\(m_{b o l}\)</span> is the bolometric correction (BC), the correction for the flux at unobserved wavelengths. For the Sun, this is about 0.07 magnitudes; <span class="math inline">\(m_{v}=-26.78\)</span> and <span class="math inline">\(m_{b o l}=\)</span> -26.85. Given its known distance, this implies that the visual magnitude is +4.79 and the bolometric absolute magnitude +4.72 . Thus in general we can see that the bolometric absolute magnitude of any other star must be</p>
+<p><span class="math display">\[
+M_{b o l}=4.72-2.5 \log \left(L / L_{\odot}\right)
+\]</span></p>
+<p>Thus a <span class="math inline">\(100 L_{\odot}\)</span> star has <span class="math inline">\(M_{b o l}=-0.28\)</span>.</p>
+</section>
+<section id="mass-the-sun" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="mass-the-sun"><span class="header-section-number">2.8</span> Mass: The Sun</h2>
+<p>From simple mechanics, if we assume a circular orbit for the Earth (mass <span class="math inline">\(M_{E}\)</span> ), then the gravitational attraction of the Sun must just balance the required acceleration for circular motion at velocity <span class="math inline">\(v\)</span> at radius <span class="math inline">\(r(=1 \mathrm{AU})\)</span></p>
+<p><span class="math display">\[
+\frac{M_{E} v^{2}}{r}=\frac{G M_{E} M_{\odot}}{r^{2}}
+\]</span></p>
+<p>so the mass of the Sun is</p>
+<p><span class="math display">\[
+M_{\odot}=\frac{r v^{2}}{G} .
+\]</span></p>
+<p>But for an orbital period <span class="math inline">\(T\)</span> ( <span class="math inline">\(=1\)</span> year), <span class="math inline">\(v\)</span> is given by</p>
+<p><span class="math display">\[
+v=\frac{2 \pi r}{T}
+\]</span></p>
+<p>so</p>
+<p><span class="math display">\[
+M_{\odot}=\frac{4 \pi^{2}}{G} \frac{r^{3}}{T^{2}}=1.99 \times 10^{30} \mathrm{~kg}
+\]</span></p>
+<p>Notice that for bodies in orbit around any star, the star’s mass must scale as</p>
+<p><span class="math display">\[
+\frac{M_{*}}{M_{\odot}}=\frac{a^{3}}{(1 \mathrm{AU})^{3}} \frac{(1 \text { year })^{2}}{T^{2}}
+\]</span></p>
+<p>where <span class="math inline">\(a\)</span> is the semi-major axis of the orbit (as in Kepler’s third law).</p>
+</section>
+<section id="binary-stars" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="binary-stars"><span class="header-section-number">2.9</span> Binary Stars</h2>
+<p>Stars are frequently found in multiple systems. Of 57 stars within <span class="math inline">\(5 \mathrm{pc}, 22\)</span> (39%) are single and there are 13 doubles and 3 triples. In visual binaries, the two stars can be seen separately and we may observe their orbits over a long time period. If we again consider, for simplicity, circular orbits, clearly the two stars (masses <span class="math inline">\(M_{1}\)</span> and <span class="math inline">\(M_{2}\)</span> ) will orbit their common centre of mass, C, like weights on the end of a bar, at distances given by</p>
+<p><span class="math display">\[
+M_{1} r_{1}=M_{2} r_{2}
+\]</span></p>
+<p>Also the period must be the same for each, so their velocities are related by</p>
+<p><span class="math display">\[
+T=\frac{2 \pi r_{1}}{v_{1}}=\frac{2 \pi r_{2}}{v_{2}}
+\]</span></p>
+<p>For star 1 we must have</p>
+<p><span class="math display">\[
+\frac{M_{1} v_{1}^{2}}{r_{1}}=\frac{G M_{1} M_{2}}{\left(r_{1}+r_{2}\right)^{2}}
+\]</span></p>
+<p>(since the separation of the masses must be the sum of their distances from C ), so</p>
+<p><span class="math display">\[
+\begin{gathered}
+M_{2}=\frac{v_{1}^{2}}{r_{1}^{2}} \frac{\left(r_{1}+r_{2}\right)^{2} r_{1}}{G} \\
+=\frac{4 \pi^{2}}{G} \frac{r_{1}\left(r_{1}+r_{2}\right)^{2}}{T^{2}}
+\end{gathered}
+\]</span></p>
+<p>and similarly for</p>
+<p><span class="math display">\[
+M_{1}=\frac{4 \pi^{2}}{G} \frac{r_{2}\left(r_{1}+r_{2}\right)^{2}}{T^{2}}
+\]</span></p>
+<p>Notice that the sum of the masses is given by</p>
+<p><span class="math display">\[
+M_{1}+M_{2}=4 \pi^{2} r^{3} / G T^{2}
+\]</span></p>
+<p>where <span class="math inline">\(r\)</span> is the separation between the stars. As above, the constant of proportionality becomes unity when we measure in <span class="math inline">\(M_{\odot}\)</span>, AU and years. Also 1 AU subtends an angle of <span class="math inline">\(1^{\prime \prime}\)</span> at 1 pc , so if the angular separation in arc seconds is <span class="math inline">\(r^{\prime \prime}\)</span> and the parallax is <span class="math inline">\(p\)</span> (so that the distance in pc is <span class="math inline">\(1 / p\)</span> ), we can write simply</p>
+<p><span class="math display">\[
+M_{1}+M_{2}=\left(r^{\prime \prime} / p\right)^{3} / T^{2} .
+\]</span></p>
+<p>Since all the quantities on the right hand side are observables, the masses can be deduced. About 40000 binaries are known but only around 200 have sufficiently accurately measured orbits. (In general, the orbits will be ellipses, inclined to the plane of the sky, but with detailed observations we can allow for these factors). The largest directly measured mass is about <span class="math inline">\(33 M_{\odot}\)</span> and the minimum <span class="math inline">\(0.09 M_{\odot}\)</span>. In spectroscopic binaries the two stars are too close together to be seen separately (or one is too faint to be seen), but the spectrum of the system shows two sets of spectral lines which change positions systematically, due to the Doppler effect, as the stars move away or towards the observer in their orbits. Though a more complex problem, such observations can also be interpreted in terms of the masses of the components of the binary.</p>
+</section>
+<section id="surface-temperatures-spectra" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="surface-temperatures-spectra"><span class="header-section-number">2.10</span> Surface Temperatures: Spectra</h2>
+<p>We can approximate a star’s radiation to that from a black body. We can then use Wien’s law</p>
+<p><span class="math display">\[
+\lambda_{\max } T_{s}=2.898 \times 10^{-3} \mathrm{~m} . \mathrm{K}
+\]</span></p>
+<p>to get the stellar surface temperature from the position of the peak in the star’s spectrum (in terms of intensity <span class="math inline">\(I_{\lambda}\)</span> against wavelength <span class="math inline">\(\lambda\)</span> ).</p>
+</section>
+<section id="colour-indices" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="colour-indices"><span class="header-section-number">2.11</span> Colour Indices</h2>
+<p>Instead of the detailed spectrum (or spectral energy density = SED) we can use the flux in specific wavebands. Standard filters can be used to define the bands, for instance <span class="math inline">\(U\)</span> (ultra-violet: 300400 nm ), <span class="math inline">\(B\)</span> (blue: <span class="math inline">\(400-500 \mathrm{~nm}\)</span> ) and <span class="math inline">\(V\)</span> (visual: <span class="math inline">\(500-600 \mathrm{~nm}\)</span> ). (Note that in practice, the filter responses do not cut off sharply, so the bands actually overlap). Since the peak in a blackbody curve shifts to shorter wavelengths as the temperature increases, we will get an increase in the flux <span class="math inline">\(F\)</span> in the shorter wavelength bands relative to those in longer wavelength bands as <span class="math inline">\(T_{s}\)</span> increases. Because of the definition of the magnitude system, we can write the ratio of fluxes in two bands as a difference in magnitudes, e.g.</p>
+<p><span class="math display">\[
+m_{B}-m_{V} \equiv B-V=-2.5 \log \left(F_{B} / F_{V}\right)
+\]</span></p>
+<p>Thus an increase in <span class="math inline">\(F_{B} / F_{V}\)</span> will lead to a decrease in the colour index <span class="math inline">\(B-V\)</span>. Hot, blue stars have small (or negative) <span class="math inline">\(B-V\)</span> while cool red stars have large values of <span class="math inline">\(B-V\)</span>. Recall that by the definition of the magnitude scale, the star Vega has a visual apparent magnitude of zero. We can extend the ‘Vega system’ of magnitudes so that it has magnitude zero in all bands. Thus it will have <span class="math inline">\(B-V\)</span> (and all other colour indices) zero as well. Stars hotter than Vega (which has a surface temperature of 10000 K ) will have negative <span class="math inline">\(B-V\)</span> etc., while all cooler stars (the majority) have positive <span class="math inline">\(B-V\)</span>. For instance a star with a surface temperature of 30000 K has <span class="math inline">\(B-V \simeq-0.5\)</span> while a ‘red dwarf’ at 3000 K has <span class="math inline">\(B-V \simeq 1.65\)</span>. The Sun, at about 5800 K , has <span class="math inline">\(B-V \simeq 0.6\)</span>. For perfect black bodies we can calculate that they would have</p>
+<p><span class="math display">\[
+B-V \simeq 7000 / T_{s}-0.7
+\]</span></p>
+</section>
+<section id="line-spectra" class="level2" data-number="2.12">
+<h2 data-number="2.12" class="anchored" data-anchor-id="line-spectra"><span class="header-section-number">2.12</span> Line Spectra</h2>
+<p>Stars are not perfect black bodies because of absorption lines and bands in their spectra. In the Sun these are seen as dark ‘Fraunhofer’ lines across the spectrum. They are produced by absorption of photons in the cooler surface layers of a star, just above the ‘photosphere’ where the continuous spectrum originates, and can be used to deduce surface temperatures.</p>
+</section>
+<section id="spectral-classification" class="level2" data-number="2.13">
+<h2 data-number="2.13" class="anchored" data-anchor-id="spectral-classification"><span class="header-section-number">2.13</span> Spectral Classification</h2>
+<p>The Harvard spectral classification system was developed in the 1890s by Annie Jump Cannon and is still used, in a revised form, today. The classes are based on the strengths of absorption lines in the spectra, firstly the strength of the hydrogen Balmer lines. Stars with the strongest Balmer lines are class A and the next strongest are class B , for instance. However, it turns out to be more useful to order the stars by their surface temperature or colour, as (for ‘Main Sequence’ stars) these correlate with other parameters such as the mass. The main classes are then in the order (hotter to cooler) O B A F G K M. Each class has subdivisions 0 to 9 , e.g.&nbsp;the Sun is a G2 star. The B-V colour runs from about -0.5 for O stars, through 0 for AO stars (Vega) to +1.5 or more for M stars.</p>
+</section>
+<section id="balmer-lines" class="level2" data-number="2.14">
+<h2 data-number="2.14" class="anchored" data-anchor-id="balmer-lines"><span class="header-section-number">2.14</span> Balmer Lines</h2>
+<p>To see why the strengths of absorption lines depend on the surface temperature, consider as an example the spectrum of hydrogen. As you will see in Astrophysical Concepts, the energy difference between two energy levels <span class="math inline">\(n_{1}\)</span> and <span class="math inline">\(n_{2}\)</span> in the hydrogen atom is</p>
+<p><span class="math display">\[
+\Delta E=\frac{h c}{\lambda}=C_{1}\left(\frac{1}{n_{1}^{2}}-\frac{1}{n_{2}^{2}}\right)
+\]</span></p>
+<p>where <span class="math inline">\(C_{1}=13.6 \mathrm{eV}\left(1.77 \times 10^{-18} \mathrm{~J}\right)\)</span> is the energy needed to completely remove an electron in the ground state ( <span class="math inline">\(n=1\)</span> ), i.e.&nbsp;the energy required for ionization. Balmer absorption lines are produced when an electron in the <span class="math inline">\(n=2\)</span> state absorbs a photon and jumps to a higher level. The lines, denoted <span class="math inline">\(\mathrm{H} \alpha, \mathrm{H} \beta\)</span> etc. are in the optical region of the spectrum between <span class="math inline">\(656.3 \mathrm{~nm}(\mathrm{H} \alpha)\)</span> and about 365 nm . At high <span class="math inline">\(T_{s}\)</span> most of the hydrogen will be ionized so there will be few electrons in the low energy states. At low <span class="math inline">\(T_{s}\)</span> nearly all the electrons will be in the ground state. Thus in both cases there will be few electrons in the <span class="math inline">\(n=2\)</span> state available to be excited. Thus the Balmer lines will be strongest in intermediate <span class="math inline">\(T_{s}\)</span> stars.</p>
+</section>
+<section id="other-lines" class="level2" data-number="2.15">
+<h2 data-number="2.15" class="anchored" data-anchor-id="other-lines"><span class="header-section-number">2.15</span> Other Lines</h2>
+<p>Cooler stars show increasingly prominent lines from other elements, such as Sodium (Na) and Calcium (Ca). The coolest M stars also show strong absorption features due to molecules, particularly Titanium Oxide which produces broad absorption at the red end of the spectrum.</p>
+</section>
+<section id="line-widths" class="level2" data-number="2.16">
+<h2 data-number="2.16" class="anchored" data-anchor-id="line-widths"><span class="header-section-number">2.16</span> Line Widths</h2>
+<p>Given the surface temperature we can calculate the typical thermal velocities of the atoms or molecules from</p>
+<p><span class="math display">\[
+m v^{2} / 2=3 k T_{s} / 2
+\]</span></p>
+<p>For example, hydrogen atoms in a G type star with temperature 6000 K will have an rms velocity of about <span class="math inline">\(12 \mathrm{~km} / \mathrm{sec}\)</span>. This should give rise to Balmer lines Doppler broadened by about</p>
+<p><span class="math display">\[
+\Delta \lambda=(v / c) \times \lambda \simeq 0.00004 \times 500 \simeq 0.02 \mathrm{~nm}
+\]</span></p>
+<p>Many stars show much broader lines in practice. This can be ascribed to rotation of the stars (with one side approaching and one receding from the observer). Rotation periods are found to be in the range 1 to 300 days.</p>
+</section>
+<section id="chemical-composition" class="level2" data-number="2.17">
+<h2 data-number="2.17" class="anchored" data-anchor-id="chemical-composition"><span class="header-section-number">2.17</span> Chemical Composition</h2>
+<p>Once the temperature effects are understood, we can use the line spectrum to infer the chemical composition of the surface layers of stars. In most cases the star’s material is unmixed, so nuclear processing in the core (see later) does not alter the surface composition, so it reflects the chemical composition of the star when it formed. All stars are made almost entirely of hydrogen and helium. The Sun is about 70% hydrogen, 28% helium and <span class="math inline">\(2 \%\)</span> heavier elements (collectively called ‘metals’ in astrophysics). This is usually written as <span class="math inline">\(\mathrm{X}=0.70, \mathrm{Y}=0.28, \mathrm{Z}=0.02\)</span>. The helium content is never seen to be below about <span class="math inline">\(24 \%\)</span>, which reflects the amount of helium produced cosmologically just after the Big Bang. The ‘metallicity’, Z , is usually between 0.001 and 0.04 . Young (i.e.&nbsp;recently formed) ‘Population I’ stars have higher Z than old ‘Population II’ stars which formed early in the evolution of the Galaxy.</p>
+</section>
+<section id="stellar-characteristics" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Stellar Characteristics</h1>
+<section id="the-h-r-diagram" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="the-h-r-diagram"><span class="header-section-number">3.1</span> The H-R Diagram</h2>
+<p>In the early 1900s Ejnar Hertzsprung and Henry Norris Russell found that the absolute magnitudes of stars correlated with their colours and spectral types; on a plot of <span class="math inline">\(M_{V}\)</span> against ( <span class="math inline">\(B-V\)</span> ) most stars were in a swathe from luminous and blue to faint and red. As we already know that colour reflects temperature, this is also a correlation between luminosity and temperature. If stars radiate approximately as black bodies (of radius <span class="math inline">\(R\)</span> ), then their luminosities will follow</p>
+<p><span class="math display">\[
+\begin{gathered}
+L=4 \pi R^{2} \sigma T_{s}^{4} \\
+\log L=\mathrm{constant}+2 \log R+4 \log T_{s}
+\end{gathered}
+\]</span></p>
+<p>Thus if stars all had the same radius they would lie on a line of slope 4 in a plot of <span class="math inline">\(\log L\)</span> versus <span class="math inline">\(\log T_{s}\)</span>. In fact, the ‘Hertzsprung-Russell diagram’ is always plotted with temperature decreasing to the right (colour index increasing), so the line is actually of slope -4. If there exist classes of very large (giant) or very small (dwarf) stars then these will lie above or below ‘normal’ sized stars. At given <span class="math inline">\(T_{s}\)</span>, large stars are clearly more luminous than small stars.</p>
+</section>
+<section id="observations" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="observations"><span class="header-section-number">3.2</span> Observations</h2>
+<p>If we take a modern set of observations, for instance from the Hipparcos catalogue of 40000 nearby stars with accurately known distances, then we can place these on our <span class="math inline">\(\mathrm{H}-\mathrm{R}\)</span> diagram. About <span class="math inline">\(80 \%\)</span> do lie on a diagonal line across the plot (though with slope about -6 not -4) referred to as the Main Sequence. The steep slope implies that the hotter stars are actually also larger than the cooler stars. There are also stars to the upper left of the diagonal - red giants - and towards the bottom left of the plot - white dwarfs. The alternative way to obtain an H -R diagram is to choose stars all at the same distance, in a star cluster. There are two kinds in the Galaxy, open clusters and globular clusters. Open clusters, like the Pleiades or Hyades, are found in the disc of our Galaxy and contain <span class="math inline">\(\sim 10\)</span> to <span class="math inline">\(10^{3}\)</span> stars. Their H-R diagrams are generally similar to that for general nearby stars, though red giants may be rarer. Globular clusters are found well away from the Galactic Plane (generally at much larger distances from us, in what is called the halo of the Galaxy) and contain <span class="math inline">\(\sim 10^{5}\)</span> or <span class="math inline">\(10^{6}\)</span> stars. These have rather different H-R diagrams. The bright, blue end of the main sequence is no longer present but there are many more red giants. Notice that if we can assume that the main sequence is the same in all clusters, i.e.&nbsp;the same <span class="math inline">\(M_{V}\)</span> always corresponds to the same ( <span class="math inline">\(B-V\)</span> ), we can use it as a way of of determining distances to clusters. We merely have to find the the correct distance modulus <span class="math inline">\(m-M\)</span> so that the observed main sequence in <span class="math inline">\(m\)</span> vs.&nbsp;( <span class="math inline">\(B-V\)</span> ) is shifted to match the standard curve. This is called ‘main sequence fitting’.</p>
+</section>
+<section id="the-mass-luminosity-relation" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="the-mass-luminosity-relation"><span class="header-section-number">3.3</span> The Mass-Luminosity Relation</h2>
+<p>Using the methods discussed earlier we can determine the masses for some main sequence stars. Plotting these against their luminosities (in a log-log plot), we find a tight correlation. The slope of the relation varies between about 3 and 5 , depending on the mass range, i.e.</p>
+<p><span class="math display">\[
+L \propto M^{\beta}
+\]</span></p>
+<p>with <span class="math inline">\(\beta=3-5\)</span>.</p>
+<p>Assuming that the available fuel is a fixed fraction of the total mass of the star then a star’s main sequence lifetime must be proportional to the amount of fuel divided by the rate at which it is used up in generating the star’s luminosity, or</p>
+<p><span class="math display">\[
+\tau_{m s} \propto M / L \propto M^{1-\beta}
+\]</span></p>
+<p>For instance, over the range where <span class="math inline">\(\beta \simeq 3\)</span> we will have <span class="math inline">\(\tau_{m s} \propto M^{-2}\)</span>. We can now make several deductions.</p>
+<ul>
+<li>The main sequence is a sequence in mass. Bright blue stars are of high mass, faint red stars are low mass.</li>
+<li>More massive stars have shorter lifetimes. Thus stars at the ‘top’ of the main sequence will end their main sequence lives first.</li>
+<li>Open clusters, with main sequences extending to very bright stars must be young.</li>
+<li>Globular clusters, with truncated main sequences must be old.</li>
+<li>Since globular clusters also have many red giants, we can speculate that after their main sequence phase, stars evolve into red giants.</li>
+</ul>
+</section>
+</section>
+<section id="the-internal-structure-of-stars" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> The Internal Structure of Stars</h1>
+<p>Stars are large spheres of hot gas in equilibrium between internal pressure and self-gravity. They are then governed by the law of hydrostatic equilibrium (see Astrophysical Concepts).</p>
+<section id="hydrostatic-equilibrium" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="hydrostatic-equilibrium"><span class="header-section-number">4.1</span> Hydrostatic Equilibrium</h2>
+<p>Assume the star is spherically symmetric so pressure <span class="math inline">\(P\)</span> and density <span class="math inline">\(\rho\)</span> are functions of radius <span class="math inline">\(r\)</span> only. If we consider a fluid element of cross-sectional area <span class="math inline">\(\Delta A\)</span> and depth <span class="math inline">\(\Delta r\)</span> at radial position <span class="math inline">\(r\)</span>, then the outward force due to the pressure (gradient) will be just</p>
+<p><span class="math display">\[
+F_{p}=P \Delta A-(P+\Delta P) \Delta A=-\Delta P \Delta A=-\Delta r(d P / d r) \Delta A
+\]</span></p>
+<p>(Note that the force is outward only if <span class="math inline">\(d P / d r\)</span> is negative). The inward gravitational force on the element (mass <span class="math inline">\(\Delta m\)</span> ), due to the mass inside radius <span class="math inline">\(r\)</span> will be</p>
+<p><span class="math display">\[
+F_{g}=\frac{G M(r) \Delta m}{r^{2}}
+\]</span></p>
+<p>But given the respective volumes and densities, the masses must be</p>
+<p><span class="math display">\[
+\Delta m=\rho(r) \Delta r \Delta A
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+M(r)=\int_{0}^{r} \rho(s) 4 \pi s^{2} d s
+\]</span></p>
+<p>For equilibrium <span class="math inline">\(F_{p}=F_{g}\)</span> so</p>
+<p><span class="math display">\[
+\frac{d P}{d r}=-\frac{G M(r) \rho(r)}{r^{2}}
+\]</span></p>
+<p>To solve this explicitly, we need to know (or assume) <span class="math inline">\(\rho(r)\)</span> or have another relationship between <span class="math inline">\(P\)</span> and <span class="math inline">\(\rho\)</span>. However, we can obtain some simple approximations. Purely on dimensional grounds it is clear that if we just approximate <span class="math inline">\(d P / d r\)</span> by the total change in pressure from the centre of the star ( <span class="math inline">\(P=P_{c}\)</span> ) to the surface <span class="math inline">\((P=0)\)</span> divided by the radius of the star <span class="math inline">\((R)\)</span>, of total mass <span class="math inline">\(M\)</span>, we must have</p>
+<p><span class="math display">\[
+P_{c} \sim \frac{G M \rho}{R} \sim \frac{G M^{2}}{R^{4}}
+\]</span></p>
+<p>More accurately, assume a constant density, <span class="math inline">\(\bar{\rho}=3 M / 4 \pi R^{3}\)</span>. This implies <span class="math inline">\(M(r)=(r / R)^{3} M\)</span>, so putting these into the hydrostatic equilibrium equation we have</p>
+<p><span class="math display">\[
+-\frac{d P}{d r}=\frac{G M r^{3}}{R^{3}} \frac{3 M}{4 \pi R^{3}} \frac{1}{r^{2}} .
+\]</span></p>
+<p>Integrating from the centre to the surface we then get</p>
+<p><span class="math display">\[
+P_{c}=\int_{0}^{R} r d r \frac{3 G M^{2}}{4 \pi R^{6}}=\frac{3 G M^{2}}{8 \pi R^{4}} .
+\]</span></p>
+<p>For the Sun, <span class="math inline">\(M_{\odot} \simeq 2 \times 10^{30} \mathrm{~kg}, R_{\odot} \simeq 7 \times 10^{8} \mathrm{~m}\)</span> (so <span class="math inline">\(\bar{\rho} \simeq 1400 \mathrm{~kg} \mathrm{~m}^{-3}\)</span> ), giving</p>
+<p><span class="math display">\[
+P_{c} \simeq 1.4 \times 10^{14} \mathrm{Nm}^{-2} .
+\]</span></p>
+<p>For a realistic <span class="math inline">\(\rho(r)\)</span> decreasing outwards, <span class="math inline">\(P_{c}\)</span> is even higher. Such pressures must therefore exist at the centres of stars to support them against their own self gravity. We should next consider how these pressures are produced.</p>
+</section>
+<section id="thermal-gas-pressure" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="thermal-gas-pressure"><span class="header-section-number">4.2</span> Thermal Gas Pressure</h2>
+<p>In a gas at temperature <span class="math inline">\(T\)</span> the particles (mass <span class="math inline">\(m\)</span> ) have mean kinetic energy</p>
+<p><span class="math display">\[
+(1 / 2) m&lt;v^{2}&gt;=(3 / 2) k T
+\]</span></p>
+<p>Momentum transfer through collisions then produces a pressure given, for an ideal gas, by the perfect gas law</p>
+<p><span class="math display">\[
+P=n k T=\frac{k}{m} \rho T,
+\]</span></p>
+<p>where <span class="math inline">\(n\)</span> and <span class="math inline">\(\rho\)</span> are the particle number density and the mass density, respectively. The relationship between <span class="math inline">\(P\)</span> and <span class="math inline">\(\rho\)</span> (and in this case <span class="math inline">\(T\)</span> ) is called the equation of state. Provided we have an ionized gas (plasma), the perfect gas law still holds at the very high densities calculated above. Assuming a star to be made entirely of ionized hydrogen the mean particle mass <span class="math inline">\(m=\left(m_{e}+m_{p}\right) / 2 \simeq\)</span> <span class="math inline">\(m_{p} / 2\)</span>. (If we include helium this increases to about <span class="math inline">\(0.62 m_{p}\)</span> ). Using the central pressure calculated for a homogeneous sphere and the perfect gas law we get a central temperature</p>
+<p><span class="math display">\[
+T_{c} \simeq \frac{m}{k} \frac{P_{c}}{\bar{\rho}} \simeq \frac{m}{k} \frac{G M}{2 R} \sim 6 \times 10^{6} \mathrm{~K} .
+\]</span></p>
+<p>Note that at these temperatures <span class="math inline">\((3 / 2) k T \sim 1 \mathrm{keV}&gt;&gt;13.6 \mathrm{eV}\)</span>, so the hydrogen is indeed ionized. They are also high enough for thermonuclear fusion reactions to occur.</p>
+</section>
+<section id="radiation-pressure" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="radiation-pressure"><span class="header-section-number">4.3</span> Radiation Pressure</h2>
+<p>A photon with energy <span class="math inline">\(h v\)</span> carries momentum <span class="math inline">\(h v / c\)</span> and therefore exerts pressure through the transfer of this momentum when photons are absorbed or scattered. For a black body we know that the flux (of energy of photons) passing through unit area of a surface is <span class="math inline">\(\sigma T^{4}\)</span>. Thus we would expect a pressure (flux of momentum) <span class="math inline">\(\sim \sigma T^{4} / c\)</span>. Specifically, for an isotropic radiation field this becomes</p>
+<p><span class="math display">\[
+P_{r a d}=\frac{4}{3} \frac{\sigma T^{4}}{c} \equiv \frac{1}{3} a T^{4} .
+\]</span></p>
+<p>At <span class="math inline">\(T \sim 10^{7} \mathrm{~K}, P_{r a d} \sim 3 \times 10^{12} \mathrm{Nm}^{-2} \sim P_{c} / 50\)</span>. However, as <span class="math inline">\(T\)</span> increases, <span class="math inline">\(P_{\text {rad }}\)</span> may dominate.</p>
+</section>
+<section id="degeneracy-pressure" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="degeneracy-pressure"><span class="header-section-number">4.4</span> Degeneracy Pressure</h2>
+<p>Degeneracy pressure is a quantum mechanical effect, important at very high densities. It occurs because the Pauli exclusion principle allows only one electron per quantum state (or 2 per energy state, as the electron has a choice of two spin states). The number of available states per unit volume is limited for a confined set of particles. The exclusion principle thus prevents the particles being too close together and therefore acts as a pressure. The Heisenberg uncertainty principle relates position and momentum uncertainties (in 1-D) through <span class="math inline">\(\Delta x \Delta p&gt;h\)</span>. If a particle is constrained in a very small volume then its momentum must be large. In 3-D this means that we can only have 2 electrons in a 6-dimensional phase-space element defined by <span class="math inline">\(4 \pi r^{2} d r \times 4 \pi p^{2} d p=h^{3}\)</span>. Thus the (physical) space density of particles with momentum <span class="math inline">\(p\)</span> to <span class="math inline">\(p+d p\)</span> is limited to</p>
+<p><span class="math display">\[
+d n=2 / 4 \pi r^{2} d r=8 \pi p^{2} d p / h^{3}
+\]</span></p>
+<p>The total density of particles with momentum less than <span class="math inline">\(p\)</span> is then just the integral of this, i.e.</p>
+<p><span class="math display">\[
+n=\frac{8 \pi p^{3}}{3 h^{3}}
+\]</span></p>
+<p>for completely degenerate gas. As before, pressure is the same as rate of momentum transfer, <span class="math inline">\(p n v \propto p^{2} n\)</span> for non-relativistic particles or <span class="math inline">\(p n c \propto p n\)</span> for relativistic particles. But from above, <span class="math inline">\(n \propto p^{3}\)</span> so we have a degeneracy pressure <span class="math inline">\(P_{d} \propto p^{5}\)</span> in the non-relativistic case or <span class="math inline">\(\propto p^{4}\)</span> for the relativistic one. Finally, since <span class="math inline">\(\rho \propto n \propto p^{3}\)</span>, this implies that non-relativistic degenerate matter will have</p>
+<p><span class="math display">\[
+P_{d}=A_{1} \rho^{5 / 3}
+\]</span></p>
+<p>while relativistic degenerate matter has</p>
+<p><span class="math display">\[
+P_{d}=A_{2} \rho^{4 / 3}
+\]</span></p>
+<p>for some constants <span class="math inline">\(A_{1}\)</span> and <span class="math inline">\(A_{2}\)</span>. Notice particularly that there is no dependence on temperature. Thus degenerate stars will not change their size as they cool. Electron degeneracy pressure is important in the very dense white dwarf stars. Since collisions tend to equalise the energy ( <span class="math inline">\(m \nu^{2}\)</span> ) of particles in a gas, the much more massive neutrons will have higher momentum <span class="math inline">\((m v)\)</span> by a factor <span class="math inline">\(\sqrt{m_{n} / m_{e}}\)</span>. They will therefore occupy a <span class="math inline">\(\left(m_{n} / m_{e}\right)^{3 / 2}\)</span> times larger volume in momentum space than the electrons, so neutron degeneracy will only set in when the number density is about <span class="math inline">\(10^{5}\)</span> times higher than for electron degeneracy. This occurs in neutron stars.</p>
+</section>
+<section id="energy-sources-in-stars" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="energy-sources-in-stars"><span class="header-section-number">4.5</span> Energy Sources in Stars</h2>
+<p>As a star shines it is losing energy at a rate equal to its luminosity <span class="math inline">\(L\)</span>. If it has a lifetime <span class="math inline">\(\tau\)</span> it must have available an energy source <span class="math inline">\(E=\tau L\)</span>. From estimates of the age of the Earth, we know that the Sun must be at least 4.6 Gyr old <span class="math inline">\(\left(1.5 \times 10^{17} \mathrm{~s}\right)\)</span>. This requires <span class="math inline">\(E_{\odot}&gt;6 \times 10^{43} \mathrm{~J}\)</span>. Consider first gravitational energy. As the separation of two masses <span class="math inline">\(m_{1}\)</span> and <span class="math inline">\(m_{2}\)</span> is reduced from infinity to <span class="math inline">\(r\)</span>, gravitational potential energy</p>
+<p><span class="math display">\[
+E_{G}=\frac{G m_{1} m_{2}}{r}
+\]</span></p>
+<p>is released. In the same way, if a star of mass <span class="math inline">\(M\)</span> is formed by the collapse of a very large cloud down to radius <span class="math inline">\(R\)</span> the energy released is</p>
+<p><span class="math display">\[
+E_{G}=\alpha \frac{G M^{2}}{R}
+\]</span></p>
+<p>where <span class="math inline">\(\alpha\)</span> is a constant which depends on the density distribution in the star. If the density is uniform, <span class="math inline">\(\alpha=3 / 5\)</span>. Thus for the Sun we have an approximate energy supply</p>
+<p><span class="math display">\[
+E_{G} \simeq \frac{3}{5} \frac{6.67 \times 10^{-11}\left(2 \times 10^{30}\right)^{2}}{7 \times 10^{8}} \sim 2 \times 10^{41} \mathrm{~J}
+\]</span></p>
+<p>about 300 times too small.</p>
+</section>
+<section id="nuclear-energy" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="nuclear-energy"><span class="header-section-number">4.6</span> Nuclear Energy</h2>
+<p>A general atomic nucleus consists of <span class="math inline">\(Z\)</span> protons and <span class="math inline">\(N\)</span> neutrons. <span class="math inline">\(Z\)</span> is the atomic number and the number of nucleons, <span class="math inline">\(A=Z+N\)</span>, is the mass number. For light nuclei, <span class="math inline">\(N \simeq Z\)</span>. In the nuclear shell model, the protons and neutrons fill up parallel sets of energy levels, in a similar way to the electrons in shells outside the nucleus. The binding energy of a nucleus is</p>
+<p><span class="math display">\[
+B=\left(Z m_{p}+N m_{n}-M_{Z}^{A}\right) c^{2}
+\]</span></p>
+<p>where <span class="math inline">\(M_{Z}^{A}\)</span> is the total mass of the nucleus. <span class="math inline">\(B\)</span> is usually given in MeV and is the amount of energy needed to pull the nucleus apart. For comparing the stability of nuclei, the binding energy per nucleon <span class="math inline">\(B / A\)</span> is more useful. Two forces are important in nuclei, the strong nuclear force and the electrostatic force. The strong force is atractive and applies between all nucleons. As its name implies it is stronger than other forces on nuclear scales, but is very short range, <span class="math inline">\(\sim 10^{-15} \mathrm{~m}\)</span> (smaller than one large nucleus). The strong force also saturates, in the sense that a nucleon can only bind to a limited number of others around it. In dense nuclear matter all bonds will be saturated so we would expect <span class="math inline">\(B / A\)</span> to tend to a constant value, as seen for heavy nuclei. On the other hand, for light nuclei, there are unused bonds so additional nucleons can be pulled in closer. <span class="math inline">\(B / A\)</span> should therefore increase with <span class="math inline">\(A\)</span>. The electrostatic (Coulomb) force is repulsive (all positive charges) but effects only the protons. It is weak but extends to all scales. Its contribution to the binding energy works like gravitational potential,</p>
+<p><span class="math display">\[
+B \sim-\frac{3}{5} \frac{Z^{2} e^{2}}{4 \pi \epsilon_{0} R}
+\]</span></p>
+<p>for a nucleus of size <span class="math inline">\(R\)</span>. The density of nucleons is rougly constant so <span class="math inline">\(R \propto A^{1 / 3}\)</span>. Also, until we reach very heavy nucleons <span class="math inline">\(Z \simeq A / 2\)</span>. Therefore</p>
+<p><span class="math display">\[
+\frac{B}{A} \propto-\frac{Z^{2}}{A^{4 / 3}} \propto-A^{2 / 3}
+\]</span></p>
+<p>In heavy nuclei <span class="math inline">\(Z\)</span> does not increase as fast as <span class="math inline">\(A\)</span>, so <span class="math inline">\(B / A\)</span> is reduced. The opposing effects of the two forces produce a peak in <span class="math inline">\(B / A\)</span> for moderately heavy nuclei, specifically at <span class="math inline">\(A=56\)</span>, i.e.&nbsp;iron. <span class="math inline">\(\mathrm{Fe}_{26}^{56}\)</span> is the most stable nucleus. This implies that energy will be released if nuclei up to Fe are synthesised from lighter ones (nuclear fusion) and will also be released if nuclei heavier than Fe are split into two lighter ones (nuclear fission). Stars are mostly hydrogen and helium , so fusion is potentially important for supplying their energy output but fission is not. For fusion to occur, the electostatic repulsion between the two light nuclei must be overcome. This is possible in stars because of the very high thermal energies of the nuclei; thermonuclear fusion. Bigger nuclei have more coulomb repulsion between them, so higher temperatures are required for fusion. This is important for understanding stellar evolution (see later in the course). The most important fusion reactions in stars are as follows.</p>
+</section>
+<section id="hydrogen-burning" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="hydrogen-burning"><span class="header-section-number">4.7</span> Hydrogen Burning</h2>
+<p>The net effect of hydrogen burning is to turn four protons into a helium nucleus</p>
+<p><span class="math display">\[
+4 \mathrm{H}_{1}^{1} \rightarrow \mathrm{He}_{2}^{4}+2 e^{+}+2 v_{e}
+\]</span></p>
+<p>where <span class="math inline">\(e^{+}\)</span>represents a positron and <span class="math inline">\(v_{e}\)</span> is an electron neutrino. This occurs at a temperature <span class="math inline">\(T_{H} \sim\)</span> <span class="math inline">\(10^{7} \mathrm{~K}\)</span> and is the energy source for main sequence stars; the net result in each case is the release of 26.7 MeV per <span class="math inline">\(\mathrm{He}^{4}\)</span> nucleus produced.</p>
+<p>However, it does not proceed by the direct fusion of four protons (as it is unlikely that four will all arrive at the same point at the same time), but by successive addition. Several chains of reactions are important. The first are the PP (proton-proton) chains. In this case <span class="math inline">\(\mathrm{He}^{4}\)</span> is built up via deuterium and <span class="math inline">\(\mathrm{He}^{3}\)</span> (PP I), or via the prodution of <span class="math inline">\(\mathrm{Be}^{7}\)</span> and then either <span class="math inline">\(\mathrm{Li}^{7}\)</span> (PP II) or <span class="math inline">\(\mathrm{B}^{8}\)</span> (PP III).</p>
+<p>PP I dominates at <span class="math inline">\(T&lt;1.4 \times 10^{7} \mathrm{~K}\)</span> and only <span class="math inline">\(2 \%\)</span> of the avaailable energy is lost to the neutrinos (average energy 0.26 MeV ). PPII dominates at 1.4 to <span class="math inline">\(2.7 \times 10^{7} \mathrm{~K}\)</span> and has losses of <span class="math inline">\(4 \%\)</span> to the neutrinos (the average energy of the neutrino arising from the production of <span class="math inline">\(\mathrm{Li}^{7}\)</span> is 0.8 MeV ). Finally, the PP III chain dominates above <span class="math inline">\(2.3 \times 10^{7} \mathrm{~K}\)</span>, but with <span class="math inline">\(28 \%\)</span> of the energy going into neutrinos <span class="math inline">\((7.2 \mathrm{MeV}\)</span> for the neutrino emitted by the <span class="math inline">\(\mathrm{Be}^{8}\)</span> decay). The CNO cycle (sometimes called the CNO bi-cycle) is rather different in that it uses existing carbon nuclei in the build up of the helium, though they are not ‘used up’, being returned at the end after processing through oxygen and nitrogen isotopes. Neutrinos produced at various stages all have energies <span class="math inline">\(\sim 1 \mathrm{MeV}\)</span> so the net energy loss is <span class="math inline">\(6.4 \%\)</span>. Since 26.7 MeV is produced per 4 protons, this amounts to <span class="math inline">\(0.7 \%\)</span> of the original rest mass <span class="math inline">\(4 m_{p} c^{2}\)</span>. The energy available from <span class="math inline">\(1 M_{\odot}\)</span> is therefore</p>
+<p><span class="math display">\[
+E_{n u c}=\frac{M_{\odot}}{4 m_{p}} \times 26.7 \times 1.6 \times 10^{-12} \simeq 1.3 \times 10^{45} \mathrm{~J}
+\]</span></p>
+<p>Even if only <span class="math inline">\(10 \%\)</span> of the mass of a star like the Sun is used up in hydrogen burning on the main sequence this is enough to fuel it for <span class="math inline">\(\simeq 10^{10}\)</span> years, easily covering the age of the Solar System.</p>
+</section>
+<section id="helium-burning" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="helium-burning"><span class="header-section-number">4.8</span> Helium Burning</h2>
+<p>The next basic process is the conversion of three helium nuclei to one carbon. The first two <span class="math inline">\(\mathrm{He}_{2}^{4}\)</span> give a <span class="math inline">\(\mathrm{Be}_{4}^{8}\)</span> and although most of these decay back, a few live long enough to fuse with another <span class="math inline">\(\mathrm{He}_{2}^{4}\)</span> to give <span class="math inline">\(\mathrm{C}_{6}^{12}\)</span>. This operatures at temperatures <span class="math inline">\(T \sim 10^{8} \mathrm{~K}\)</span> and is a main energy source in red giants, producing 7.65 MeV per C nucleus formed.</p>
+</section>
+<section id="carbon-burning" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="carbon-burning"><span class="header-section-number">4.9</span> Carbon Burning</h2>
+<p>The simplest reaction is just the fusion of two <span class="math inline">\(\mathrm{C}_{6}^{12}\)</span> to give <span class="math inline">\(\mathrm{Mg}_{12}^{24}\)</span>. It requires much higher temperatures, <span class="math inline">\(T \sim 2 \times 10^{9} \mathrm{~K}\)</span> in order to instigate. It therefore only occurs in massive stars, late in their lives. There are also carbon burning processes at slightly lower temperatures ( <span class="math inline">\(&gt;8 \times 10^{8} \mathrm{~K}\)</span> ) which produce oxygen, neon and sodium. Note that these differ from the CNO cycle in that the carbon is used up as fuel, not merely used as a catalyst. Even heavier elements (up to iron) can be produced in nuclear fusion at yet higher temperatures in stars of mass 5-20 <span class="math inline">\(M_{\odot}\)</span>.</p>
+</section>
+<section id="stability-of-energy-generation" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="stability-of-energy-generation"><span class="header-section-number">4.10</span> Stability of Energy Generation</h2>
+<p>In equilibrium, we require that the power generated in the core is equal to that radiated from the surface. But the energy generation rate is very temperature dependent, so the temperature in the core must self-regulate.</p>
+<p>In normal stars (supported by thermal pressure), if the energy generation rate rises above the equilibrium value, the core temperature rises, so the pressure rises. The core therefore expands and cools, lowering the energy generation rate again. Hence the equilibrium is restored (stable). In degenerate stars, if the energy generation rises, the core temperatue again rises, but this has no effect on the degeneracy pressure. Thus there is no expansion or cooling. However, the increased temperature will lead to more energy generation, so there is a runaway thermonuclear explosion (e.g.&nbsp;the ‘helium flash’ at the onset of helium burning in the degenerate cores of low mass post-main sequence stars). Stable thermonuclear energy generation is therefore not possible in degenerate stars.</p>
+</section>
+</section>
+<section id="stellar-evolution" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Stellar Evolution</h1>
+<p>The overall scheme of things is cyclical. Interstellar gas clouds contract until the hydrogen at the core is hot enough for nuclear fusion and a main sequence star is formed. When the central hydrogen has been exausted, the star can burn hydrogen further out, in a shell, and/or helium in the core, becoming a post-main sequence star (e.g.&nbsp;red giant). Low mass stars then lose their outer envelopes relatively quietly evolving into planetary nebulae (PN), while high mass stars lose their outer layers explosively in a supernova (SN). The remaining remnant of the PN phase is a white dwarf and that of a SN is a neutron star (or possibly black hole). In both cases, the mass lost from the original star is recycled back into the interstellar medium (ISM), but now enriched in heavy elements (the supernovae being responsible for the heaviest elements).</p>
+<section id="star-formation" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="star-formation"><span class="header-section-number">5.1</span> Star Formation</h2>
+<p>Stars form from interstellar gas clouds which collapse under gravity. Small clouds can support themselves against gravity, but larger ones - where the inward gravitational force exceeds the outward pressure force (the Jeans criterion) - will be unstable to collapse. For typical ISM densities, the mass for instability can be much greater than typical stellar masses, and magnetic fields threaded through the gas will also oppose collapse of charged particles. Thus the collapse may need to be triggered, for instance by a shock wave from a supernova passing through the gas and increasing the local density. Once some stars have formed more triggering may take place, so that star formation propagates through a larger region. As higher mass regions are more unstable to collapse, individual stars may fragment out of a larger, already collapsing, cloud, thus forming a cluster of stars.</p>
+</section>
+<section id="phases-during-star-formation" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="phases-during-star-formation"><span class="header-section-number">5.2</span> Phases During Star Formation</h2>
+<p>The initial phase of the collapse is dominated by gravity, so is called the free-fall phase. This has a timescale <span class="math inline">\(t_{f f} \simeq 1 / \sqrt{G \rho} \sim 10^{5} \mathrm{yrs}\)</span>. The gas is still fairly cool and will radiate in the infra-red - a proto-star. As the thermal pressure builds up the star will collapse more slowly, in near hydrostatic equilibrium. Gravitational potential energy is liberated, half of which is radiated away, the rest going into heating the gas - a pre-main sequence star. Conservation of angular momentum (and the effects of magnetic fields) will leave a disc around the forming star, again potentially detectable as an infra-red source. We may also observe bi-polar molecular outflows from young stellar objects (YSOs). Denser knots in these outflows are called Herbig-Haro objects. If the surrounding gas and dust is burned off we see a T Tauri star. Eventually, when the temperature at the centre of the cloud reaches about <span class="math inline">\(10^{7} \mathrm{~K}, \mathrm{H}\)</span> burning begins. The star is then on the Zero Age Main Sequence (ZAMS).</p>
+<p>As stars generally form in clusters, such clusters will contain a few massive stars with <span class="math inline">\(M \geq 10 M_{\odot}\)</span>. These form an OB association. These massive stars have main sequence lifetimes less than a few million years. They also have temperatures above 20000 K and emit strongly in the ultra-violet. Surrounding gas will absorb UV photons and become ionized. As the protons and electrons recombine they will emit hydrogen lines, particularly the Balmer lines <span class="math inline">\(\mathrm{H} \alpha\)</span> etc. This luminous gas around hot young stars (e.g.&nbsp;the Orion Nebula) is called an HII region. (Recall from Astrophysical Concepts that HI is neutral hydrogen and HII is ionized hydrogen. For heavier ions, OIII, for instance, is twice ionized oxygen and FeXXVI is iron with 25 electrons removed). A shock wave from the expansion of the HII region surrounding an OB association may trigger further star formation. This is seen in the Orion region, where there is a progression of star clusters of different ages across the whole area, the most recent sitting next to a region of unused molecular gas.</p>
+</section>
+<section id="main-sequence-stars" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="main-sequence-stars"><span class="header-section-number">5.3</span> Main Sequence Stars</h2>
+<p>For a cloud or star contracting in a quasi-equilibrium state</p>
+<p><span class="math display">\[
+2 E_{\text {thermal }}=-U_{\text {grav }},
+\]</span></p>
+<p>an example of the Virial Theorem. Thus, as noted above, as a star contracts half of the change in the gravitational potential <span class="math inline">\(\Delta U\)</span> goes into increasing the thermal energy (i.e.&nbsp;the temperature) and the other half has to be radiated away. Hydrogen burning requires a temperature of <span class="math inline">\(10^{7} \mathrm{~K}\)</span> and this is only reached if <span class="math inline">\(M \geq 0.08 M_{\odot}\)</span>. Thus this is the minimum mass for a main sequence star (about 80 times the mass of Jupiter). Smaller masses continue to contract slowly as brown dwarfs. The hydrogen burning in the core (where the temperature and pressure are highest) generates energy which replace that radiated away at the surface so the contraction stops and the star settles onto the main sequence. The energy is transported to the surface by radiation (i.e.&nbsp;a slow diffusion of photons through the opaque plasma) or by convection (the bulk motion of the gas). Convection is important in the outer regions of stars like the Sun and the core regions of massive stars. It is also dominant in pre-main sequence stars and some phases of post main sequence stars, where it can mix material from different levels. Hydrogen burning continues in the core until all the fuel there has been converted to helium. This typically uses up <span class="math inline">\(10 \%\)</span> of the mass of the star. The star then moves off the main sequence.</p>
+</section>
+<section id="post-main-sequence-evolution" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="post-main-sequence-evolution"><span class="header-section-number">5.4</span> Post Main Sequence Evolution</h2>
+<p>When hydrogen burning ceases in the core, the star contracts in order to release gravitational energy to match that radiated away. The contraction also heats the star so hydrogen burning turns on in the shell of hydrogen outside what is now a helium core. This new structure causes the envelope of the star to expand, eventually turning it into a red giant, being cooler, but more luminous than before. The detailed evolution depends on the mass of the star. Consider two examples.</p>
+</section>
+<section id="a-5-m_odot-star" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="a-5-m_odot-star"><span class="header-section-number">5.5</span> A <span class="math inline">\(5 M_{\odot}\)</span> Star</h2>
+<p>As the hydrogen in the core is used up the star initially expands at roughly constant surface temperature. After the hydrogen shell burning is established and then starts to move outwards as more fuel is consumed, the core collapses further but the envelope expands, making the surface even cooler and now reducing the luminosity.</p>
+<p>Eventually convection develops in the envelope and carries the energy to the surface faster, increasing the luminosity. This is the start of the red giant phase. Temperatures in the core continue to rise as it contracts further, so helium burning is able to start. The interplay between helium burning in the core and hydrogen burning in the envelope gradually shifts in favour of the helium burning and the star becomes hotter and brighter. When the helium in the core is exhausted the star develops a helium burning shell and moves back towards the red but is now a supergiant.</p>
+</section>
+<section id="a-1-m_odot-star" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="a-1-m_odot-star"><span class="header-section-number">5.6</span> A <span class="math inline">\(1 M_{\odot}\)</span> Star</h2>
+<p>During core hydrogen burning the temperature in the core increases slightly, also increasing the energy output, i.e.&nbsp;the luminosity. After the core hydrogen is used up, the hydrogen burning moves outwards. This heats the surrounding envelope, which expands, the surface layers thus actually becoming cooler. Convective layers develop, greatly increasing the luminosity and moving the star onto the red giant branch. Further contraction and heating of the core first turns it into a degenerate gas and then leads to helium burning. Because the degeneracy pressure does not increase and lead to expansion as the core heats further, energy production becomes even stronger producing a brief ‘helium flash’. Helium core burning and hydrogen shell burning then continue, at reduced luminosity, the star now being a subgiant. When the helium burning ends in the core, a helium shell burning stage is reached and the star returns to being a red giant, but now on what is called the asymptotic giant branch (AGB). The shell helium burning is very temperature dependent and this causes the star to become unstable and become a variable. Luminosity changes of <span class="math inline">\(20 \%\)</span> to <span class="math inline">\(50 \%\)</span> can occur in timescales of a few years. Pulsations lead to loss of the surface layers, revealing the much hotter interior. The blown off layers form a planetary nebula (PN). The central star, made mostly of degenerate carbon, cools over a period <span class="math inline">\(\sim 10^{5}\)</span> years to become a white dwarf.</p>
+</section>
+<section id="chemical-composition-1" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="chemical-composition-1"><span class="header-section-number">5.7</span> Chemical Composition</h2>
+<p>A general (and simplified) overview of stellar evolution is therefore the alternation between thermonuclear burning - with constant temperature but changing composition - and gravitational contraction - with rising temperature but fixed composition. Details of stellar evolution will depend on the chemical composition of the stars. Low <span class="math inline">\(Z\)</span> stars will evolve to slightly different places in the H-R diagram to high <span class="math inline">\(Z\)</span> stars. The low <span class="math inline">\(Z\)</span> main sequence is slightly below the high <span class="math inline">\(Z\)</span> one and low <span class="math inline">\(Z\)</span> stars also define a ‘horizontal branch’ when helium burning, but the general pattern is the same. Clusters of stars should all have been born at the same time and with the same <span class="math inline">\(Z\)</span>. Calculating the evolutionary tracks for a range of masses up to a fixed time gives loci in the H-R diagram called isochrones. These can then be fitted to the observed distribution of stars in a given cluster.</p>
+</section>
+<section id="white-dwarfs" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="white-dwarfs"><span class="header-section-number">5.8</span> White Dwarfs</h2>
+<p>These are moderate mass stars (e.g.&nbsp;Sirius’ companion Sirius B with <span class="math inline">\(M=1.05 M_{\odot}\)</span> ), but with very high temperatures ( <span class="math inline">\(\sim 30000 \mathrm{~K}\)</span> ) and very low luminosities <span class="math inline">\(\left(\sim 3 \times 10^{-3} L_{\odot}\right)\)</span> - hence their position in the H-R diagram. These values imply radii <span class="math inline">\(\sim 7 \times 10^{-3} R_{\odot} \sim 5000 \mathrm{~km}\)</span> and therefore a density <span class="math inline">\(\sim 3 \times 10^{9} \mathrm{~kg} \mathrm{~m}^{-3}\)</span>. They are therefore degenerate and supported by electron degeneracy pressure. It can be shown (see below) that this can only stabilise stars against their self gravity up to a maximum mass (the Chandrasekhar Limit) of <span class="math inline">\(1.4 M_{\odot}\)</span>.</p>
+<p>Since white dwarfs are seen in young open clusters, these (at least) must have evolved from much more massive stars (low mass stars having long lifetimes). This requires massive stars to shed their outer layers at the end of their nuclear burning lifetimes (the mass lost being visible for some time as a planetary nebula). Since degeneracy pressure is independent of temperature, white dwarfs will cool along tracks of constant radius in the <span class="math inline">\(\mathrm{H}-\mathrm{R}\)</span> diagram (i.e.&nbsp;<span class="math inline">\(L \propto T^{4}\)</span> ). They have typical cooling times <span class="math inline">\(\sim 10^{9} \mathrm{yr}\)</span>. From hydrostatic equilibrium we have approximately</p>
+<p><span class="math display">\[
+P_{c} \sim \frac{G M \rho}{R}
+\]</span></p>
+<p>and in a non-relativistic degenerate gas <span class="math inline">\(P \propto \rho^{5 / 3}\)</span>, so</p>
+<p><span class="math display">\[
+\rho^{2 / 3} \propto M / R
+\]</span></p>
+<p>Substituting in <span class="math inline">\(\rho \propto M / R^{3}\)</span> we then have</p>
+<p><span class="math display">\[
+\frac{M^{2 / 3}}{R^{2}} \propto \frac{M}{R}
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+R \propto M^{-1 / 3} .
+\]</span></p>
+<p>(Notice that this is the opposite of bodies with fixed density, which have <span class="math inline">\(R \propto M^{1 / 3}\)</span> ). Thus as <span class="math inline">\(M\)</span> increases, the radius decreases, the density increases, the central pressure increases and therefore the momenta of the electrons has to increase. This requires ever increasing velocities so eventually, at high enough mass, these must become relativistic. But in this case we have <span class="math inline">\(P \propto \rho^{4 / 3}\)</span> so going through the same steps as above <span class="math inline">\(\rho^{1 / 3} \propto M / R\)</span> and</p>
+<p><span class="math display">\[
+\frac{M^{1 / 3}}{R} \propto \frac{M}{R} .
+\]</span></p>
+<p>But this can only be true for one value of <span class="math inline">\(M\)</span>, the upper limit for any sort of (electron) degenerate white dwarf.</p>
+</section>
+<section id="supernovae" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="supernovae"><span class="header-section-number">5.9</span> Supernovae</h2>
+<p>These stellar explosions are extremely luminous, with absolute magnitudes <span class="math inline">\(M_{B}\)</span> around -16 to -20 , the same as a whole small to moderate sized galaxy. Most are seen in external galaxies (e.g.&nbsp;SN1987A in the Large Magellanic Cloud). We expect around 1 every 30 years in our Galaxy, though none has been seen since Kepler’s Supernova in 1604. (This is because supernovae primarily occur in the disc of our Galaxy and are usually distant enough to be hidden, optically, by interstellar dust; many supernova remnants can be observed at radio wavelengths). Supernovae come in three main types, Ia, Ib and II. Type II supernovae (SNe) have hydrogen lines in their spectra. They are triggered by core collapse in evolved massive (hence recently formed Population I) stars in spiral and irregular galaxies. They have peak luminosities between 0.4 and <span class="math inline">\(4 \times 10^{9} L_{\odot}\)</span> 。 Type I SNe have no hydrogen lines in their spectra. Type Ia SNe occur in both spiral and elliptical galaxies as a result of the explosion of an older (Population II) white dwarf star. This follows mass transfer from a companion in a binary system taking the white dwarf over the mass limit for stability. All Type Ia SNe thus occur in very similar circumstances and all have peak brightnesses close to <span class="math inline">\(L_{B}=9.6 \times 10^{9} L_{\odot}\)</span>, making them excellent standard candles for distance estimation. The rarer Type Ib SNe appear to occur only in spirals and may be associated with the end point of the evolution of the most massive stars (above about <span class="math inline">\(60 M_{\odot}\)</span> ) which have lost their hydrogen envelope before the core collapses.</p>
+</section>
+<section id="core-collapse-sne" class="level2" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="core-collapse-sne"><span class="header-section-number">5.10</span> Core Collapse SNe</h2>
+<p>Stars with masses between 10 and <span class="math inline">\(60 M_{\odot}\)</span> go through the full range of nuclear burning phases and end up with an iron core at <span class="math inline">\(T_{c} \sim 5 \times 10^{9} \mathrm{~K}\)</span> (contraction is not halted by degeneracy pressure). When no further nuclear burning is possible, the core suddenly loses energy via two processes. One is the photodisintegration of nuclei. At the temperatures encountered in the core, the black body photons ( <span class="math inline">\(\gamma\)</span>-rays) have sufficient energy to break up nuclei,</p>
+<p><span class="math display">\[
+\gamma+\mathrm{Fe}_{26}^{56} \rightarrow 13 \mathrm{He}_{2}^{4}+4 n-\text { energy }
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+\gamma+\mathrm{He}_{2}^{4} \rightarrow 2 p+2 n-\text { energy. }
+\]</span></p>
+<p>The other is ‘neutronisation’. Electrons in the core have sufficient energy for</p>
+<p><span class="math display">\[
+e+p \rightarrow n+v_{e}
+\]</span></p>
+<p>the neutrinos then escaping from the star and carying away energy. As a result of the energy losses, the core collapses reaching the density of nuclear matter, <span class="math inline">\(\sim 10^{17} \mathrm{~kg}\)</span> <span class="math inline">\(\mathrm{m}^{-3}\)</span>, and a neutron star is formed. This liberates energy equivalent to its binding energy, <span class="math inline">\(\sim G M^{2} / R \sim 2 \times 10^{46} \mathrm{~J}\)</span> for a <span class="math inline">\(1 M_{\odot}\)</span> neutron star of radius 15 km , most of it in neutrinos. Around <span class="math inline">\(10^{44} \mathrm{~J}\)</span> goes into mechanical energy of the ejecta and <span class="math inline">\(10^{42}\)</span> to <span class="math inline">\(10^{43} \mathrm{~J}\)</span> in to photons. Collapse of the core leaves the envelope unsupported. This falls in and is heated rapidly to <span class="math inline">\(10^{9} \mathrm{~K}\)</span>. The envelope gas has not been through nuclear processing so is still mainly hydrogen and helium. The heating then leads to a thermonuclear explosion involving many simultaneous production chains. The envelope then bounces off the core, driven by the intense neutrino burst, to form an expanding remnant. SN1987A in the LMC gave direct observational support for this model. A neutrino burst was observed by two detectors on Earth about 3 hours before the SN was seen (the delay being the time for the shock wave to reach the star’s surface). Also, the nuclear burning in the envelope should produce radioactive <span class="math inline">\(\mathrm{Ni}_{28}^{56}\)</span> which decays to <span class="math inline">\(\mathrm{Co}_{27}^{56}\)</span> and then <span class="math inline">\(\mathrm{Fe}_{26}^{56}\)</span>. The fall-off in the light curve of 1987A matches the decay time of <span class="math inline">\(\mathrm{Co}^{56}\)</span> and specific cobalt emission lines at 847 keV and 1238 keV were seen in the <span class="math inline">\(\gamma\)</span>-ray spectrum.</p>
+</section>
+<section id="neutron-stars-and-pulsars" class="level2" data-number="5.11">
+<h2 data-number="5.11" class="anchored" data-anchor-id="neutron-stars-and-pulsars"><span class="header-section-number">5.11</span> Neutron Stars and Pulsars</h2>
+<p>As above, we expect that Type II SN explosions should produce a neutron star remnant supported by neutron degeneracy pressure. Theoretical models suggest that these can be up to about <span class="math inline">\(3 M_{\odot}\)</span> (nuclear forces between the neutrons complicate the situation), but measured masses are all close to <span class="math inline">\(1.4 M_{\odot}\)</span>. Given the density of nuclear material, radii should be in the range <span class="math inline">\(10-17 \mathrm{~km}\)</span>. The luminosity is therefore very small making neutron stars hard to detect. However, in 1967 Jocelyn Bell and Tony Hewish discovered rapidly pulsating radio sources, or pulsars. These are found with periods of a few seconds down to milliseconds. They are incredibly precise ‘clocks’ but slow down slightly over time. A few are found in SN remnants (e.g.&nbsp;the Crab and Vela pulsars), supporting the model of pulsars as rotating neutron stars. The radiation we see (in both the radio and optical) is due to a beam emitted along the magnetic axes of the stars, the pulsations then being due to a ‘light house effect’ as the beam sweeps across the direction to the Earth. This requires the magnetic axis to be misaligned with the rotation axis. Note that rotation at the very short periods observed requires neutron star densities. Consider a particle of mass <span class="math inline">\(m\)</span> on the equator of a star, mass <span class="math inline">\(M\)</span>, radius <span class="math inline">\(R\)</span>, rotating at angular velocity <span class="math inline">\(\omega\)</span>. For the star’s gravity to supply sufficient force to keep the particle in a circular orbit at <span class="math inline">\(R\)</span></p>
+<p><span class="math display">\[
+\frac{G M m}{R^{2}}&gt;m R \omega^{2}
+\]</span></p>
+<p><span class="math display">\[
+\frac{G M}{R^{3}}&gt;\omega^{2}
+\]</span></p>
+<p>But <span class="math inline">\(N=4 \pi R^{3} \rho / 3\)</span> and <span class="math inline">\(\omega=2 \pi / T\)</span> so</p>
+<p><span class="math display">\[
+\rho&gt;\frac{3 \pi}{G T^{2}} .
+\]</span></p>
+<p>For <span class="math inline">\(T \simeq 1 \mathrm{~ms}, \rho \geq 10^{17} \mathrm{~kg} \mathrm{~m}^{-3}\)</span>. Neutron stars are also the source of X-ray binary sources, the X-rays arising from accretion of material onto the neutron star from its companion. In the Galaxy there are two types, high mass X-ray binaries (HMXBs) in young systems and low mass X-ray binaries (LMXBs) in Population II systems.</p>
+</section>
+</section>
+<section id="stellar-activity" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Stellar Activity</h1>
+<p>By stellar activity, we mean transient phenomena on the surfaces of stars. These are usually associated with magnetic fields and the build up and release of magnetic energy. We see these phenomena in more detail on the Sun since it is so much closer than any other star.</p>
+<section id="the-structure-of-the-sun" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="the-structure-of-the-sun"><span class="header-section-number">6.1</span> The Structure of the Sun</h2>
+<p>Starting from the outermost, least dense regions, we have first the corona. This is composed of tenuous gas at <span class="math inline">\(T \sim 10^{6} \mathrm{~K}\)</span> and is visible optically during a solar eclipse. The temperature decreases as we move in, reaching a minimum at the chromosphere. Just below this is the photosphere, the edge of the visible disc of the Sun, at <span class="math inline">\(T \simeq 5800 \mathrm{~K}\)</span> Under the visible surface, there is a turbulent layer where energy transport is by convection, and under the convective layer is the radiative layer, where energy transport is via radiation. Finally at the centre is the nuclear burning core. We can image different layers of the Sun using radiation at different wavelengths since these are emitted or absorbed differently. Recall from Astrophysical Concepts, the idea of ‘optical depth’. If radiation of intensity <span class="math inline">\(I_{0}\)</span> is incident on one side of a slab of material of thickness <span class="math inline">\(x\)</span> then the emergent intensity is <span class="math inline">\(I=I_{0} e^{-\tau}\)</span> where <span class="math inline">\(\tau\)</span> is the optical depth ( <span class="math inline">\(=\kappa x\)</span> if <span class="math inline">\(\kappa\)</span> is the absorption coefficient). However, the material in the slab will also be emitting (black bodies are both perfect absorbers and perfect emitters). Thus, roughly speaking, we will see radiation from the layer 1 optical depth down (i.e.&nbsp;where <span class="math inline">\(\tau \simeq 1\)</span> ): nearly all the radiation from lower down is absorbed before it can escape while there is little radiation emitted further up If absorption is strong (as in absorption lines) then we reach <span class="math inline">\(\tau=1\)</span> for a thinner layer. Thus at the wavelength of lines like <span class="math inline">\(\mathrm{H} \alpha\)</span> we see higher layers in the Sun. Optical images show the photosphere because the corona is almost transparent to visible light (i.e.&nbsp;optically thin) while the photosphere is optically thick to visible radiation. The photosphere appears patchy due to uneven heating by convection cells in the layer below. Radio images show the corona because it is opaque to radio waves beause of plasma oscillations. No transmission is possible at frequencies below the plasma frequency</p>
+<p><span class="math display">\[
+v_{p}=9 n_{e}^{1 / 2} \mathrm{~Hz}
+\]</span></p>
+<p>where <span class="math inline">\(n_{e}\)</span> is the plasma electron density (in <span class="math inline">\(\mathrm{m}^{-3}\)</span> ). X-ray images also show the corona (although it is transparent to X-rays) since the regions lower down are too cool to produce X-rays.</p>
+</section>
+<section id="ionized-gas-in-magnetic-fields" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="ionized-gas-in-magnetic-fields"><span class="header-section-number">6.2</span> Ionized Gas in Magnetic Fields</h2>
+<p>Charged particles move in helical orbits about magnetic field lines because of the <span class="math inline">\(\underline{B} \times \underline{v}\)</span> force. Thus ionized gas can move freely along field lines but only diffuses slowly across them. A magnetic field <span class="math inline">\(B\)</span> has an energy density <span class="math inline">\(B^{2} / 2 \mu_{0}\)</span>, where <span class="math inline">\(\mu_{0}\)</span> is the permeability of free space, while the moving plasma will have energy density <span class="math inline">\(\rho v^{2} / 2\)</span>. If the magnetic field density is larger,</p>
+<p><span class="math display">\[
+B^{2}&gt;\mu_{0} \rho v^{2}
+\]</span></p>
+<p>the field will contain the plasma, otherwise the plasma will distort the field.</p>
+</section>
+<section id="the-magnetic-field-of-the-sun" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="the-magnetic-field-of-the-sun"><span class="header-section-number">6.3</span> The Magnetic Field of the Sun</h2>
+<p>The Sun has a dipole field with average strength <span class="math inline">\(\sim 10^{-4} \mathrm{~T}\)</span>. It is probably generated by the dynamo process, by electric currents in the solar interior. It is distorted by the differential rotation of the Sun and by convective cells. The field varies in strength with a 22 year period, reversing direction every 11 years (at ‘Solar minimum’).</p>
+</section>
+<section id="sunspots" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="sunspots"><span class="header-section-number">6.4</span> Sunspots</h2>
+<p>Sunspots are cooler regions of the photosphere ( <span class="math inline">\(\sim 3800 \mathrm{~K}\)</span> ) which therefore appear as dark regions. They contain strong magnetic fields ( <span class="math inline">\(\sim 0.3 \mathrm{~T}\)</span> ) and generally occur in pairs with the field emerging from one ( N pole) and entering the other ( S pole). The polarity of the leading spot (in terms of the rotation direction) is opposite in the two hemispheres and reverses with the field reversal. Spots are cooler than their surroundings because strong magnetic field inhibits convection in the layer below the spot. Typical spots last <span class="math inline">\(2-4\)</span> weeks. The rotation of the Sun (period <span class="math inline">\(\sim 27\)</span> days near the equator) carries the spots across the face of the Sun. The number of sunspots visible at any one time varies in the same 11 year cycle as the dipole field. The preferred latitude of occurrence also varies, changing from around <span class="math inline">\(\pm 30^{\circ}\)</span> just after minimum to <span class="math inline">\(\pm 15^{\circ}\)</span> at maximum and <span class="math inline">\(\pm 8^{\circ}\)</span> just before the next minimum. This leads to the ‘butterfly diagram’ showing the spots positions as a function of time.</p>
+</section>
+<section id="the-solar-corona-and-solar-wind" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="the-solar-corona-and-solar-wind"><span class="header-section-number">6.5</span> The Solar Corona and Solar Wind</h2>
+<p>The very hot <span class="math inline">\(\left(10^{6} \mathrm{~K}\right)\)</span> coronal gas is probably heated by one or both of magnetohydrodynamic waves or magnetic reconnection events (where tangled magnetic fields reconnect into a lower energy configuration). The corona is continuously expanding (i.e.&nbsp;it is not stable) and as particles escape from the Sun they become the Solar Wind. X-ray images of the Sun show the corona to be very non-uniform, consisting of bright regions where the material is trapped by magnetic loops and darker regions (coronal holes) where the corona is escaping along open field lines.</p>
+</section>
+<section id="solar-flares" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="solar-flares"><span class="header-section-number">6.6</span> Solar Flares</h2>
+<p>Flares are intense bursts of radiation at all wavelengths from a small region of the Sun. They occur in the lower corona and are probably caused by sudden release of magnetic energy by reconnection above a coronal loop. This results in large currents heating the plasma to <span class="math inline">\(10^{7} \mathrm{~K}\)</span> and the acceleration of electrons and nuclei to high energies. Some of these particles escape (e.g.&nbsp;to reach the Earth), travelling along field lines. Others travel downwards to ‘foot points’, losing energy via collisions with gas at the surface of the Sun, producing</p>
+<p>X -rays and <span class="math inline">\(\gamma\)</span>-rays. Interaction of the high energy (relativistic) electrons with the magnetic field produces radio emission through the synchrotron process (as in particle accelerators).</p>
+</section>
+<section id="activity-on-other-stars" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="activity-on-other-stars"><span class="header-section-number">6.7</span> Activity on Other Stars</h2>
+<p>Several types of star are observed to have activity. For instance, low mass M dwarf stars show intense optical flares coincident with radio bursts. RS CVn stars (named after their prototype) are tidally locked binaries, probably also magnetically linked. They show very strong radio flares and optical variations consistent with rotation of very large sunspot regions across the face of the star. High resolution imaging of nearby red giants (e.g.&nbsp;Betelgeuse) show direct evidence for brightness variations across the surface of the star.</p>
+</section>
+</section>
+<section id="binary-stars-1" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Binary Stars</h1>
+<p>As we saw earlier, about <span class="math inline">\(60 \%\)</span> of stars are in binary systems. Their binary nature may be revealed in several ways. Firstly, for visual binaries, we can directly observe both components and we can relate their separations and orbital periods to the masses of the two stars. Unless observing from space, this requires their angular separation to be at least <span class="math inline">\(1^{\prime \prime}\)</span> (because of atmospheric blurring, or ‘seeing’). Since most stars are at least 10pc away, this requires separations of 10AU or more, so for typical masses of order a solar mass, our standard equation</p>
+<p><span class="math display">\[
+\left(M_{1}+M_{2}\right) T^{2}=\left(r_{1}+r_{2}\right)^{3}
+\]</span></p>
+<p>implies <span class="math inline">\(T^{2}&gt;500\)</span> or <span class="math inline">\(T&gt;22\)</span> yr. For many binary stars the periods are greater than 100 years.</p>
+<section id="spectroscopic-binaries" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="spectroscopic-binaries"><span class="header-section-number">7.1</span> Spectroscopic Binaries</h2>
+<p>At smaller separations the binary nature can be revealed by the periodic Doppler shift of the spectral lines from the stars. Consider a star in a circular orbit which is edge on to the observer (i.e.&nbsp;inclination angle <span class="math inline">\(i=90^{\circ}\)</span> ). If the star orbits at speed <span class="math inline">\(v_{1}\)</span>, the Doppler shift will vary over the orbit as</p>
+<p><span class="math display">\[
+z_{1}=\frac{\Delta \lambda}{\lambda}=\frac{v_{1} \cos \theta}{c}
+\]</span></p>
+<p>where <span class="math inline">\(\theta\)</span> is the angle between the line of sight and the velocity vector of the star at any given point of its orbit. Thus</p>
+<p><span class="math display">\[
+(\Delta \lambda)_{\max }=\frac{\lambda v_{1}}{c}
+\]</span></p>
+<p>but as <span class="math inline">\(v_{1}=2 \pi r_{1} / T\)</span> we have</p>
+<p><span class="math display">\[
+r_{1}=\frac{v_{1} T}{2 \pi}=\frac{c T}{2 \pi \lambda}(\Delta \lambda)_{\max }
+\]</span></p>
+<p>If spectral lines from both stars are visible then <span class="math inline">\(r_{1}\)</span> and <span class="math inline">\(r_{2}\)</span> can be determined and the system analysed as for a visual binary. Note that it is not necessary to know the distance to the system. Elliptical orbits distort the cosine curve but the system parameters can still be found if <span class="math inline">\(i=90^{\circ}\)</span>. For an orbit inclined at an unknown angle</p>
+<p><span class="math display">\[
+r_{1}=\frac{c T}{2 \pi \lambda} \frac{(\Delta \lambda)_{\max }}{\sin i}
+\]</span></p>
+<p>and we can determine only <span class="math inline">\(M_{1} \sin ^{3} i\)</span>.</p>
+</section>
+<section id="eclipsing-binaries" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="eclipsing-binaries"><span class="header-section-number">7.2</span> Eclipsing Binaries</h2>
+<p>When <span class="math inline">\(i=90^{\circ}\)</span> the stars will periodically eclipse each other (from our viewpoint). Unless the two stars happen to be equal in size, the smaller star will block out only part of the light from the larger one (annular eclipse), but will itself be completely hidden when it is eclipsed. In general we will see unequal depth eclipses in the overall light curve of the system. If the two stars have individual fluxes at the Earth <span class="math inline">\(F_{1}\)</span> and <span class="math inline">\(F_{2}\)</span>, then (assuming 2 to be the smaller star) we will see fluxes <span class="math inline">\(F=F_{1}+F_{2}\)</span> out of eclipse, <span class="math inline">\(E_{2}=F_{1}\)</span> during the secondary eclipse and</p>
+<p><span class="math display">\[
+E_{1}=F_{2}+F_{1}\left(\frac{\pi R_{1}^{2}-\pi R_{2}^{2}}{\pi R_{1}^{2}}\right)
+\]</span></p>
+<p>during the primary eclipse. The ratio of eclipse depths is then</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; \frac{F-E_{1}}{F-E_{2}}=\frac{F_{1}+F_{2}-F_{2}-F_{1}\left(R_{1}^{2}-R_{2}^{2}\right) / R_{2}^{2}}{F_{2}} \\
+= &amp; \frac{F_{1} R_{2}^{2}}{F_{2} R_{1}^{2}}=\frac{L_{1} R_{2}^{2}}{L_{2} R_{1}^{2}}=\frac{4 \pi R_{1}^{2} \sigma T_{1}^{4}}{4 \pi R_{2}^{2} \sigma T_{2}^{4}} \frac{R_{2}^{2}}{R_{1}^{2}}=\left(\frac{T_{1}}{T_{2}}\right)^{4}
+\end{aligned}
+\]</span></p>
+<p>For either eclipse, label the start of the eclipse (first contact) by <span class="math inline">\(t_{p}\)</span>, the time when the secondary is completely behind or in front of the primary as <span class="math inline">\(t_{q}\)</span> and the corresponding events at the end of the eclipse by <span class="math inline">\(t_{r}\)</span> and <span class="math inline">\(t_{s}\)</span>. The relative velocity of the two stars across the observers line of sight <span class="math inline">\(v=v_{1}+v_{2}=2 \pi\left(r_{1}+r_{2}\right) / T \equiv 2 \pi a / T\)</span>, where <span class="math inline">\(a\)</span> is the separation between the two stars. Hence</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; t_{s}-t_{p}=2\left(R_{1}+R_{2}\right) / v, \\
+&amp; t_{r}-t_{q}=2\left(R_{1}-R_{2}\right) / v
+\end{aligned}
+\]</span></p>
+<p>allowing us to solve for <span class="math inline">\(R_{1}\)</span> and <span class="math inline">\(R_{2}\)</span> in terms of <span class="math inline">\(a\)</span>. Most eclipsing binaries are also spectroscopic binaries, so we know <span class="math inline">\(v\)</span> and hence can determine the radii absolutely.</p>
+</section>
+<section id="close-binaries" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="close-binaries"><span class="header-section-number">7.3</span> Close Binaries</h2>
+<p>These are systems in which one (or both) stars influences the structure and evolution of the other. Often there is a transfer of mass between the two. Particles in the system move in the joint gravitational potential of the two stars. Surfaces on which this potential has a given value are called equipotential surfaces. For a single non-rotating star, equipotentials are spherical. For a single rotating star, centripetal acceleration causes the equipotentials to be ellipsoids (e.g.&nbsp;the shape of the Sun). For two stars in a binary system, there is also the gravitational attraction due to the other star (or equivalently the centripetal acceleration due to the orbital motion). Near each star, the equipotentials are pear shaped, pointing towards the other star. For some value of the potential these two surfaces just meet, at what is called the ‘inner Lagrangian point’, defining the ‘Roche lobes’ of the system. If one star fills its Roche lobe, material from the star can flow through the Lagrange point to the other star. This material will have angular momentum, from its orbital motion, so will not ‘fall’ directly onto the companion star. Instead it will form a rotating ‘accretion disc’ around it.</p>
+</section>
+<section id="accretion-discs" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="accretion-discs"><span class="header-section-number">7.4</span> Accretion Discs</h2>
+<p>Gas in the accretion disc will move in approximately Keplerian orbits with</p>
+<p><span class="math display">\[
+\frac{m v^{2}}{r}=\frac{G M m}{r^{2}} \Rightarrow v^{2} \simeq G M / r
+\]</span></p>
+<p>Since <span class="math inline">\(v\)</span> varies with <span class="math inline">\(r\)</span>, viscous effects between the gas at different <span class="math inline">\(r\)</span> cause the gas to be heated. The energy released will be proportional to <span class="math inline">\(M / R_{*}\)</span>, where <span class="math inline">\(R_{*}\)</span> is the size of the central star (which determines how small the accretion disc can get). Thus accretion discs around dense, compact objects are hotter than those around larger, less dense objects. Accretion discs around white dwarfs lead to optical emission (novae), while those around neutron stars (or black holes) result in X-ray emission (X-ray binaries).</p>
+</section>
+<section id="novae" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="novae"><span class="header-section-number">7.5</span> Novae</h2>
+<p>A nova (short for stella nova, or new star) is a star which undergoes a large increase in brightness (by factors up to <span class="math inline">\(10^{7}\)</span> ) on a short time scale. In many cases outbursts recur. In dwarf novae, the interval between outbursts is only a few weeks, but for more dramatic outbursts the interval can be 100s or 1000s of years. Novae are close binary systems with a normal star filling its Roche lobe and overflowing onto a white dwarf via an accretion disc. The luminosity emitted by the accretion disc has its origin in the potential energy lost by the gas as it falls into the potential well of the white dwarf.</p>
+</section>
+<section id="x-ray-sources" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="x-ray-sources"><span class="header-section-number">7.6</span> X-ray Sources</h2>
+<p>Most stars, such as the Sun, are only weak X-ray sources. But there are several hundred strong X-ray emitting sources in the Galaxy. These are binaries which consist of a normal star filling its Roche lobe and a neutron star plus hot accretion disc. Near the neutron star, the strong magnetic field <span class="math inline">\(\left(\sim 10^{8} \mathrm{~T}\right)\)</span> funnels the gas down onto the magnetic poles of the star, forming two X-ray emitting hot spots. These are carried around the star by rotation (if the magnetic axis does not coincide with the rotation axis) leading to variability in the observed X-ray flux. In some cases the deduced masses are much more than <span class="math inline">\(3 M_{\odot}\)</span> (e.g.&nbsp;Cygnus X-1 at about <span class="math inline">\(16 M_{\odot}\)</span> ). These are almost certainly too massive to be neutron stars so are presumably black holes surrounded by accretion discs. In General Relativity, around any mass <span class="math inline">\(M\)</span> there is an ‘event horizon’ from within which no matter or radiation can escape. This has the Schwarzschild radius</p>
+<p><span class="math display">\[
+R_{s}=\frac{2 G M}{c^{2}}
+\]</span></p>
+<p>(In a simple Newtonian analogue, this would be the radius at which the escape velocity becomes the speed of light). Any body which contracts to within its own event horizon becomes a black hole. No known pressure mechanism can hold up a degenerate star of more than about <span class="math inline">\(3 M_{\odot}\)</span>, so any such star must collapse to a black hole, hence the conclusion that the most massive X-ray binaries must harbour black holes. Much larger black holes with masses of millions of solar masses or more are believed to be present at the centres of galaxies. Accretion onto these fuels active galactic nuclei (AGN), the most powerful of which are quasars.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
