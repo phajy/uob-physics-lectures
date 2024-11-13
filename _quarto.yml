@@ -12,6 +12,8 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - text: "Stars"
+      file: stars-notes.qmd
     - summary.qmd
     - references.qmd
   downloads: pdf

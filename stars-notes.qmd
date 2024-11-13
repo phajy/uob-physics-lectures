@@ -1,0 +1,950 @@
+# Measurements on Stars
+
+## Setting the Scene
+
+The Sun and all the stars which we can see at night are part of one huge system called the Galaxy (often referred to as the Milky Way Galaxy).
+The Galaxy is basically disc shaped, with a spheroidal bulge in the centre, and contains about $10^{11}$ stars in total. It also contains gas and dust between the stars (the interstellar medium).
+In this section of the course we will consider the observed properties of stars and how we can deduce their physical characteristics.
+
+## Distances: Trigonometric Parallax
+
+Observing from different locations changes the apparent position of a star on the sky, relative to more distant stars. However, different observers on the Earth see no measurable effect; even the nearest stars are too distant for this to work.
+We therefore need the longer baseline provided by the movement of the Earth around the Sun. Depending how near the star is to the Ecliptic (the apparent path of the Sun around the sky in the course of a year), the star will trace out a more or less elongated ellipse (if it is near the Ecliptic Pole the motion will be a circle), but with its semi-major axis depending only on the star's distance. This angle is called the star's annual parallax, $p$.
+By simple trigonometry, with a baseline of 1 AU (the mean Earth-Sun distance, approximately $1.5 \times$ $10^{11} \mathrm{~m}$ ), and using the small angle approximation, we have
+
+$$
+\begin{aligned}
+p(\text { radians }) & \simeq \tan p=1 \mathrm{AU} / d \\
+\text { or } d(\mathrm{AU}) & =1 / p \text { (radians) }
+\end{aligned}
+$$
+
+If we now define the unit of distance 1 parsec to be the distance at which the parallax is exactly one second of arc, then
+
+$$
+d(\mathrm{pc})=1 / p(\operatorname{arcsec})
+$$
+
+But there are $3600 \times(180 / \pi)=206265$ arc seconds in 1 radian, so there must be the same number of AU in a parsec. Thus $1 \mathrm{pc}=3.086 \times 10^{16} \mathrm{~m}$. (This is also 3.26 light years).
+A stellar parallax was first measured in 1838 by F.W. Bessel. He measured $p=0.29^{\prime \prime}$ for the star 61 Cygni, implying $d=3.4 \mathrm{pc}$. He chose this star as he knew that it had a large proper motion, that is a steady movement across the sky relative to other stars due to its own velocity. If all stars have similar velocities, then the nearer ones will look to move faster across the sky.
+Proper motions (denoted by the symbol $\mu$ ) are usually small, much less than $1^{\prime \prime}$ per year. Bessel was correct that 61 Cygni is one of the closest stars; the closest of all is $\alpha$ Centauri at 1.3 pc .
+Until recently, trigonometric parallaxes could be measured only for a small number of stars. The atmosphere blurs even a point source into a spot at least 1 " across (the "seeing"), so even with the best observations (on bright stars) it is impossible to measure the centre of the image to much better than $0.01^{\prime \prime}$.
+This clearly limits parallax measurements to stars with distances less than about 100 pc . The Gliese Catalogue of Nearby Stars contains about 2000 stars within 25 pc of the Sun.
+However, the satellite Hipparcos - the HIgh Precision Parallax Collecting Satellite - measured parallaxes with an accuracy of better than a milliarcsec (mas). Its final catalogue (1997) contained about 120000 stars, including 20000 with $d \leq 100 \mathrm{pc}$ and better than $10 \%$ accuracy.
+In the next decade this will be surpassed by the GAIA mission which will measure distances accurately out to several kpc. (The Galaxy's stellar disc is about 15 kpc in radius).
+
+## Flux Measurements
+
+Beyond the distance where trigonometric parallax can be used, we have to rely on less direct methods. From the usual inverse square law of the propagation of light, the observed flux from a star of luminosity $L$ at distance $d$ is
+
+$$
+F=\frac{L}{4 \pi d^{2}} .
+$$
+
+Thus for stars for which we have obtained a distance from parallax, we can calculate
+
+$$
+L=4 \pi d^{2} F .
+$$
+
+If we can find other stars which look to be of the same type (e.g. have the same colour or spectrum) we can reverse the process. That is, if we know $L$ (i.e. we assume that all stars of a given type are 'standard candles' with the same luminosity) and measure $F$ we can calculate
+
+$$
+d=(L / 4 \pi F)^{1 / 2} .
+$$
+
+This method is improved if we look at star clusters, since we can average over all the estimated distances for different sorts of stars. However, we also need to assume that none of the light from the stars is absorbed before it gets to us (see below).
+A related method is to use variable stars. For instance, certain variable stars called Cepheids (after the first known example, $\delta$ Cephei) are observed to have a very characteristic 'light curve', i.e. variation in brightness as a function of time.
+The variability is due to the star pulsating and the period of the pulsation, $P$, is related to the mass of the star, as also is the luminosity $L$. Thus there should be a well determined relationship between $P$ and $L$. In this case, we need only measure $P$ to deduce $L$ and then the measured flux $F$ gives us the distance as before. Of course, as with the previous method, we first need to calibrate the $P-L$ relation from Cepheids of known distance.
+With the Hubble Space Telescope we can observe Cepheids in other galaxies outside our own, up to distances of $\sim 20 \mathrm{Mpc}$.
+
+## Luminosity
+
+As above, if we know the distance of a star and measure its flux (in $\mathrm{Wm}^{-2}$ ), then we can determine its luminosity, that is its power output in Watts, from the inverse square law.
+The flux from the Sun (called the Solar Constant) is about 1.37 kW per square metre, so from its distance, $1.5 \times 10^{11} \mathrm{~m}$, we can deduce a luminosity of $3.86 \times 10^{26} \mathrm{~W}$.
+This value is denoted $1 L_{\odot}$ and is a convenient unit in which to measure the luminosities of other stars.
+
+## Magnitudes
+
+However, optical astronomers traditionally use a logarithmic magnitude scale instead of fluxes and luminosities. This derives from the Greek astronomer Hipparchus (1st Century BC) who classified stars into those 'of the first magnitude' (the brightest ones), those 'of the second magnitude', and so on. The faintest stars visible were of the sixth magnitude.
+It turns out that the eye has a logarithmic response to light, so that the ratio of observed flux from, say, a fourth magnitude star compared to a fifth magnitude star is the same as that between first and second magnitude stars.
+In the 19th Century, Pogson found that a one magnitude difference corresponded to a flux ratio of about 2.5 . He therefore quantified the magnitude system so that a 5 magnitude range (e.g. 1st to 6th magnitude) corresponded to exactly a factor of 100 (very close to $2.5^{5}$ ).
+
+Thus we can write the apparent magnitude of a star as
+
+$$
+m=\text { constant }-2.5 \log _{10} F
+$$
+
+the minus sign indicating that magnitudes get larger as the apparent flux gets smaller.
+Note that the 2.5 in this equation is not the factor corresponding to a 1 magnitude change (which is strictly 2.512), but reflects the fact that a factor 10 in flux corresponds to 2.5 magnitudes.
+The constant is chosen so that the measured flux gives the correct magnitude for some standard star; specifically Vega is defined to have apparent magnitude $m=0.0$. Stars brighter than Vega have negative apparent magnitudes; Sirius has $m=-1.5$ and the Sun -26.8 .
+Regardless of the value of the constant, we can see that the ratio of fluxes of two stars corresponds to the difference in their magnitude
+
+$$
+m_{1}-m_{2}=-2.5 \log F_{1}+2.5 \log F_{2}=2.5 \log \left(F_{2} / F_{1}\right)
+$$
+
+Reversing this, we also have
+
+$$
+\frac{F_{1}}{F_{2}}=10^{0.4\left(m_{2}-m_{1}\right)} .
+$$
+
+As an example, consider a double star with an unresolved magnitude of +5.0 . If one star is known to be twice as bright as the other then we can write $F_{1}=2 F_{2}$ and
+
+$$
+m_{2}-m_{1}=2.5 \log \left(F_{1} / F_{2}\right)=2.5 \log 2=0.75
+$$
+
+But also $F_{2}$ is $1 / 3$ of the total combined flux so
+
+$$
+m_{2}-5.0=2.5 \log 3=1.19
+$$
+
+Thus $m_{2}=6.19$ and $m_{1}=5.44$.
+As above, the limit of the human eye is at about $m=6$. With binoculars this can be extended to about $m=10$. With the Hubble Space Telescope the limit is around $m=29$, about 30 magnitudes fainter than Sirius. From our definition this corresponds to a factor $10^{12}$ in flux. (The same as that between the Sun and a moderately faint naked eye star).
+
+## Absolute Magnitude
+
+We can obtain an equivalent logarithmic measure of luminosity if we set the absolute magnitude to be
+
+$$
+M=\text { constant }-2.5 \log L
+$$
+
+In this case we set the constant so that for a star at a distance of 10pc the apparent magnitude $m$ and the absolute magnitude $M$ are the same. Or, put another way, the absolute magnitude is the apparent magnitude a star would have if we placed it 10pc away.
+If the star is really at a distance $d$ parsecs then, writing $F(d)$ for the flux,
+
+$$
+\frac{F(d)}{F(10)}=\frac{L}{4 \pi d^{2}} \frac{4 \pi 10^{2}}{L}=\left(\frac{10}{d}\right)^{2} .
+$$
+
+Thus
+
+$$
+m-M=2.5 \log \frac{F(10)}{F(d)}=5 \log \left(\frac{d}{10}\right)=5 \log d-5
+$$
+
+$m-M$ is called the distance modulus. It is zero for $d=10 \mathrm{pc},+5$ for $d=100 \mathrm{pc}$, etc.
+For example, Sirius has a parallax of $0.38^{\prime \prime}$ and apparent magnitude $m=-1.5$.
+
+$$
+d=1 / 0.38=2.63 \mathrm{pc}
+$$
+
+$$
+\begin{gathered}
+m-M=-1.50-M=5 \log 2.63-5=-2.90 \\
+\Rightarrow M=+1.40
+\end{gathered}
+$$
+
+Fluxes from distant stars may be reduced by absorption by dust particles in the ISM. If the flux is reduced by a factor $a(<1)$ from $F$ to $a F$, then the observed magnitude will change to
+
+$$
+m^{\prime}=m-2.5 \log a=m+A
+$$
+
+where $A \equiv 2.5 \log (1 / a)$ is the absorption in magnitudes, also called the extinction.
+On average in the Galaxy, the absorption is about 1 magnitude per kpc of ISM. However, the density of the ISM rises towards the middle of the Galaxy, so looking towards the Galactic Centre itself, $A$ is in excess of 30 magnitudes in the blue part of the spectrum. (Absorption is less at longer wavelengths).
+
+## Bolometric Magnitudes
+
+The bolometric magnitude, $m_{b o l}$, (or the corresponding flux) is that which would be obtained if we had a detector sensitive to all wavelengths. What we have been implicitly talking about so far, though, is the visual magnitude of a star, measuring the amount of light to which the eye is sensitive. Although the eye is responsive to a quite wide range, $\sim 400 \mathrm{~nm}$ to 750 nm , sensitivity is greatest for 500 to 600 nm and magnitudes corresponding to flux in this range are called visual magnitudes, $m_{v}$.
+The difference between $m_{v}$ and $m_{b o l}$ is the bolometric correction (BC), the correction for the flux at unobserved wavelengths. For the Sun, this is about 0.07 magnitudes; $m_{v}=-26.78$ and $m_{b o l}=$ -26.85.
+Given its known distance, this implies that the visual magnitude is +4.79 and the bolometric absolute magnitude +4.72 .
+Thus in general we can see that the bolometric absolute magnitude of any other star must be
+
+$$
+M_{b o l}=4.72-2.5 \log \left(L / L_{\odot}\right)
+$$
+
+Thus a $100 L_{\odot}$ star has $M_{b o l}=-0.28$.
+
+## Mass: The Sun
+
+From simple mechanics, if we assume a circular orbit for the Earth (mass $M_{E}$ ), then the gravitational attraction of the Sun must just balance the required acceleration for circular motion at velocity $v$ at radius $r(=1 \mathrm{AU})$
+
+$$
+\frac{M_{E} v^{2}}{r}=\frac{G M_{E} M_{\odot}}{r^{2}}
+$$
+
+so the mass of the Sun is
+
+$$
+M_{\odot}=\frac{r v^{2}}{G} .
+$$
+
+But for an orbital period $T$ ( $=1$ year), $v$ is given by
+
+$$
+v=\frac{2 \pi r}{T}
+$$
+
+so
+
+$$
+M_{\odot}=\frac{4 \pi^{2}}{G} \frac{r^{3}}{T^{2}}=1.99 \times 10^{30} \mathrm{~kg}
+$$
+
+Notice that for bodies in orbit around any star, the star's mass must scale as
+
+$$
+\frac{M_{*}}{M_{\odot}}=\frac{a^{3}}{(1 \mathrm{AU})^{3}} \frac{(1 \text { year })^{2}}{T^{2}}
+$$
+
+where $a$ is the semi-major axis of the orbit (as in Kepler's third law).
+
+## Binary Stars
+
+Stars are frequently found in multiple systems. Of 57 stars within $5 \mathrm{pc}, 22$ (39\%) are single and there are 13 doubles and 3 triples. In visual binaries, the two stars can be seen separately and we may observe their orbits over a long time period. If we again consider, for simplicity, circular orbits, clearly the two stars (masses $M_{1}$ and $M_{2}$ ) will orbit their common centre of mass, C, like weights on the end of a bar, at distances given by
+
+$$
+M_{1} r_{1}=M_{2} r_{2}
+$$
+
+Also the period must be the same for each, so their velocities are related by
+
+$$
+T=\frac{2 \pi r_{1}}{v_{1}}=\frac{2 \pi r_{2}}{v_{2}}
+$$
+
+For star 1 we must have
+
+$$
+\frac{M_{1} v_{1}^{2}}{r_{1}}=\frac{G M_{1} M_{2}}{\left(r_{1}+r_{2}\right)^{2}}
+$$
+
+(since the separation of the masses must be the sum of their distances from C ), so
+
+$$
+\begin{gathered}
+M_{2}=\frac{v_{1}^{2}}{r_{1}^{2}} \frac{\left(r_{1}+r_{2}\right)^{2} r_{1}}{G} \\
+=\frac{4 \pi^{2}}{G} \frac{r_{1}\left(r_{1}+r_{2}\right)^{2}}{T^{2}}
+\end{gathered}
+$$
+
+and similarly for
+
+$$
+M_{1}=\frac{4 \pi^{2}}{G} \frac{r_{2}\left(r_{1}+r_{2}\right)^{2}}{T^{2}}
+$$
+
+Notice that the sum of the masses is given by
+
+$$
+M_{1}+M_{2}=4 \pi^{2} r^{3} / G T^{2}
+$$
+
+where $r$ is the separation between the stars.
+As above, the constant of proportionality becomes unity when we measure in $M_{\odot}$, AU and years. Also 1 AU subtends an angle of $1^{\prime \prime}$ at 1 pc , so if the angular separation in arc seconds is $r^{\prime \prime}$ and the parallax is $p$ (so that the distance in pc is $1 / p$ ), we can write simply
+
+$$
+M_{1}+M_{2}=\left(r^{\prime \prime} / p\right)^{3} / T^{2} .
+$$
+
+Since all the quantities on the right hand side are observables, the masses can be deduced.
+About 40000 binaries are known but only around 200 have sufficiently accurately measured orbits. (In general, the orbits will be ellipses, inclined to the plane of the sky, but with detailed observations we can allow for these factors). The largest directly measured mass is about $33 M_{\odot}$ and the minimum $0.09 M_{\odot}$.
+In spectroscopic binaries the two stars are too close together to be seen separately (or one is too faint to be seen), but the spectrum of the system shows two sets of spectral lines which change positions systematically, due to the Doppler effect, as the stars move away or towards the observer in their orbits.
+Though a more complex problem, such observations can also be interpreted in terms of the masses of the components of the binary.
+
+## Surface Temperatures: Spectra
+
+We can approximate a star's radiation to that from a black body. We can then use Wien's law
+
+$$
+\lambda_{\max } T_{s}=2.898 \times 10^{-3} \mathrm{~m} . \mathrm{K}
+$$
+
+to get the stellar surface temperature from the position of the peak in the star's spectrum (in terms of intensity $I_{\lambda}$ against wavelength $\lambda$ ).
+
+## Colour Indices
+
+Instead of the detailed spectrum (or spectral energy density = SED) we can use the flux in specific wavebands. Standard filters can be used to define the bands, for instance $U$ (ultra-violet: 300400 nm ), $B$ (blue: $400-500 \mathrm{~nm}$ ) and $V$ (visual: $500-600 \mathrm{~nm}$ ). (Note that in practice, the filter responses do not cut off sharply, so the bands actually overlap).
+Since the peak in a blackbody curve shifts to shorter wavelengths as the temperature increases, we will get an increase in the flux $F$ in the shorter wavelength bands relative to those in longer wavelength bands as $T_{s}$ increases.
+Because of the definition of the magnitude system, we can write the ratio of fluxes in two bands as a difference in magnitudes, e.g.
+
+$$
+m_{B}-m_{V} \equiv B-V=-2.5 \log \left(F_{B} / F_{V}\right)
+$$
+
+Thus an increase in $F_{B} / F_{V}$ will lead to a decrease in the colour index $B-V$. Hot, blue stars have small (or negative) $B-V$ while cool red stars have large values of $B-V$.
+Recall that by the definition of the magnitude scale, the star Vega has a visual apparent magnitude of zero. We can extend the 'Vega system' of magnitudes so that it has magnitude zero in all bands. Thus it will have $B-V$ (and all other colour indices) zero as well.
+Stars hotter than Vega (which has a surface temperature of 10000 K ) will have negative $B-V$ etc., while all cooler stars (the majority) have positive $B-V$.
+For instance a star with a surface temperature of 30000 K has $B-V \simeq-0.5$ while a 'red dwarf' at 3000 K has $B-V \simeq 1.65$. The Sun, at about 5800 K , has $B-V \simeq 0.6$.
+For perfect black bodies we can calculate that they would have
+
+$$
+B-V \simeq 7000 / T_{s}-0.7
+$$
+
+## Line Spectra
+
+Stars are not perfect black bodies because of absorption lines and bands in their spectra. In the Sun these are seen as dark 'Fraunhofer' lines across the spectrum. They are produced by absorption of photons in the cooler surface layers of a star, just above the 'photosphere' where the continuous spectrum originates, and can be used to deduce surface temperatures.
+
+## Spectral Classification
+
+The Harvard spectral classification system was developed in the 1890s by Annie Jump Cannon and is still used, in a revised form, today. The classes are based on the strengths of absorption lines in the spectra, firstly the strength of the hydrogen Balmer lines. Stars with the strongest Balmer lines are class A and the next strongest are class B , for instance.
+However, it turns out to be more useful to order the stars by their surface temperature or colour, as (for 'Main Sequence' stars) these correlate with other parameters such as the mass.
+The main classes are then in the order (hotter to cooler) O B A F G K M. Each class has subdivisions 0 to 9 , e.g. the Sun is a G2 star. The B-V colour runs from about -0.5 for O stars, through 0 for AO stars (Vega) to +1.5 or more for M stars.
+
+## Balmer Lines
+
+To see why the strengths of absorption lines depend on the surface temperature, consider as an example the spectrum of hydrogen. As you will see in Astrophysical Concepts, the energy difference between two energy levels $n_{1}$ and $n_{2}$ in the hydrogen atom is
+
+$$
+\Delta E=\frac{h c}{\lambda}=C_{1}\left(\frac{1}{n_{1}^{2}}-\frac{1}{n_{2}^{2}}\right)
+$$
+
+where $C_{1}=13.6 \mathrm{eV}\left(1.77 \times 10^{-18} \mathrm{~J}\right)$ is the energy needed to completely remove an electron in the ground state ( $n=1$ ), i.e. the energy required for ionization.
+Balmer absorption lines are produced when an electron in the $n=2$ state absorbs a photon and jumps to a higher level. The lines, denoted $\mathrm{H} \alpha, \mathrm{H} \beta$ etc. are in the optical region of the spectrum between $656.3 \mathrm{~nm}(\mathrm{H} \alpha)$ and about 365 nm .
+At high $T_{s}$ most of the hydrogen will be ionized so there will be few electrons in the low energy states. At low $T_{s}$ nearly all the electrons will be in the ground state. Thus in both cases there will be few electrons in the $n=2$ state available to be excited. Thus the Balmer lines will be strongest in intermediate $T_{s}$ stars.
+
+## Other Lines
+
+Cooler stars show increasingly prominent lines from other elements, such as Sodium (Na) and Calcium (Ca). The coolest M stars also show strong absorption features due to molecules, particularly Titanium Oxide which produces broad absorption at the red end of the spectrum.
+
+## Line Widths
+
+Given the surface temperature we can calculate the typical thermal velocities of the atoms or molecules from
+
+$$
+m v^{2} / 2=3 k T_{s} / 2
+$$
+
+For example, hydrogen atoms in a G type star with temperature 6000 K will have an rms velocity of about $12 \mathrm{~km} / \mathrm{sec}$. This should give rise to Balmer lines Doppler broadened by about
+
+$$
+\Delta \lambda=(v / c) \times \lambda \simeq 0.00004 \times 500 \simeq 0.02 \mathrm{~nm}
+$$
+
+Many stars show much broader lines in practice. This can be ascribed to rotation of the stars (with one side approaching and one receding from the observer). Rotation periods are found to be in the range 1 to 300 days.
+
+## Chemical Composition
+
+Once the temperature effects are understood, we can use the line spectrum to infer the chemical composition of the surface layers of stars.
+In most cases the star's material is unmixed, so nuclear processing in the core (see later) does not alter the surface composition, so it reflects the chemical composition of the star when it formed.
+All stars are made almost entirely of hydrogen and helium. The Sun is about 70\% hydrogen, 28\% helium and $2 \%$ heavier elements (collectively called 'metals' in astrophysics).
+This is usually written as $\mathrm{X}=0.70, \mathrm{Y}=0.28, \mathrm{Z}=0.02$. The helium content is never seen to be below about $24 \%$, which reflects the amount of helium produced cosmologically just after the Big Bang. The 'metallicity', Z , is usually between 0.001 and 0.04 .
+Young (i.e. recently formed) 'Population I' stars have higher Z than old 'Population II' stars which formed early in the evolution of the Galaxy.
+
+# Stellar Characteristics
+
+## The H-R Diagram
+
+In the early 1900s Ejnar Hertzsprung and Henry Norris Russell found that the absolute magnitudes of stars correlated with their colours and spectral types; on a plot of $M_{V}$ against ( $B-V$ ) most stars were in a swathe from luminous and blue to faint and red. As we already know that colour reflects temperature, this is also a correlation between luminosity and temperature.
+If stars radiate approximately as black bodies (of radius $R$ ), then their luminosities will follow
+
+$$
+\begin{gathered}
+L=4 \pi R^{2} \sigma T_{s}^{4} \\
+\log L=\mathrm{constant}+2 \log R+4 \log T_{s}
+\end{gathered}
+$$
+
+Thus if stars all had the same radius they would lie on a line of slope 4 in a plot of $\log L$ versus $\log T_{s}$. In fact, the 'Hertzsprung-Russell diagram' is always plotted with temperature decreasing to the right (colour index increasing), so the line is actually of slope -4.
+If there exist classes of very large (giant) or very small (dwarf) stars then these will lie above or below 'normal' sized stars. At given $T_{s}$, large stars are clearly more luminous than small stars.
+
+## Observations
+
+If we take a modern set of observations, for instance from the Hipparcos catalogue of 40000 nearby stars with accurately known distances, then we can place these on our $\mathrm{H}-\mathrm{R}$ diagram.
+About $80 \%$ do lie on a diagonal line across the plot (though with slope about -6 not -4) referred to as the Main Sequence. The steep slope implies that the hotter stars are actually also larger than the cooler stars.
+There are also stars to the upper left of the diagonal - red giants - and towards the bottom left of the plot - white dwarfs.
+The alternative way to obtain an H -R diagram is to choose stars all at the same distance, in a star cluster. There are two kinds in the Galaxy, open clusters and globular clusters.
+Open clusters, like the Pleiades or Hyades, are found in the disc of our Galaxy and contain $\sim 10$ to $10^{3}$ stars. Their H-R diagrams are generally similar to that for general nearby stars, though red giants may be rarer.
+Globular clusters are found well away from the Galactic Plane (generally at much larger distances from us, in what is called the halo of the Galaxy) and contain $\sim 10^{5}$ or $10^{6}$ stars. These have rather different H-R diagrams. The bright, blue end of the main sequence is no longer present but there are many more red giants.
+Notice that if we can assume that the main sequence is the same in all clusters, i.e. the same $M_{V}$ always corresponds to the same ( $B-V$ ), we can use it as a way of of determining distances to clusters. We merely have to find the the correct distance modulus $m-M$ so that the observed main sequence in $m$ vs. ( $B-V$ ) is shifted to match the standard curve. This is called 'main sequence fitting'.
+
+## The Mass-Luminosity Relation
+
+Using the methods discussed earlier we can determine the masses for some main sequence stars. Plotting these against their luminosities (in a log-log plot), we find a tight correlation. The slope of the relation varies between about 3 and 5 , depending on the mass range, i.e.
+
+$$
+L \propto M^{\beta}
+$$
+
+with $\beta=3-5$.
+
+Assuming that the available fuel is a fixed fraction of the total mass of the star then a star's main sequence lifetime must be proportional to the amount of fuel divided by the rate at which it is used up in generating the star's luminosity, or
+
+$$
+\tau_{m s} \propto M / L \propto M^{1-\beta}
+$$
+
+For instance, over the range where $\beta \simeq 3$ we will have $\tau_{m s} \propto M^{-2}$.
+We can now make several deductions.
+
+- The main sequence is a sequence in mass. Bright blue stars are of high mass, faint red stars are low mass.
+- More massive stars have shorter lifetimes. Thus stars at the 'top' of the main sequence will end their main sequence lives first.
+- Open clusters, with main sequences extending to very bright stars must be young.
+- Globular clusters, with truncated main sequences must be old.
+- Since globular clusters also have many red giants, we can speculate that after their main sequence phase, stars evolve into red giants.
+
+
+# The Internal Structure of Stars
+
+Stars are large spheres of hot gas in equilibrium between internal pressure and self-gravity. They are then governed by the law of hydrostatic equilibrium (see Astrophysical Concepts).
+
+## Hydrostatic Equilibrium
+
+Assume the star is spherically symmetric so pressure $P$ and density $\rho$ are functions of radius $r$ only. If we consider a fluid element of cross-sectional area $\Delta A$ and depth $\Delta r$ at radial position $r$, then the outward force due to the pressure (gradient) will be just
+
+$$
+F_{p}=P \Delta A-(P+\Delta P) \Delta A=-\Delta P \Delta A=-\Delta r(d P / d r) \Delta A
+$$
+
+(Note that the force is outward only if $d P / d r$ is negative).
+The inward gravitational force on the element (mass $\Delta m$ ), due to the mass inside radius $r$ will be
+
+$$
+F_{g}=\frac{G M(r) \Delta m}{r^{2}}
+$$
+
+But given the respective volumes and densities, the masses must be
+
+$$
+\Delta m=\rho(r) \Delta r \Delta A
+$$
+
+and
+
+$$
+M(r)=\int_{0}^{r} \rho(s) 4 \pi s^{2} d s
+$$
+
+For equilibrium $F_{p}=F_{g}$ so
+
+$$
+\frac{d P}{d r}=-\frac{G M(r) \rho(r)}{r^{2}}
+$$
+
+To solve this explicitly, we need to know (or assume) $\rho(r)$ or have another relationship between $P$ and $\rho$. However, we can obtain some simple approximations. Purely on dimensional grounds it is clear that if we just approximate $d P / d r$ by the total change in pressure from the centre of the star ( $P=P_{c}$ ) to the surface $(P=0)$ divided by the radius of the star $(R)$, of total mass $M$, we must have
+
+$$
+P_{c} \sim \frac{G M \rho}{R} \sim \frac{G M^{2}}{R^{4}}
+$$
+
+More accurately, assume a constant density, $\bar{\rho}=3 M / 4 \pi R^{3}$. This implies $M(r)=(r / R)^{3} M$, so putting these into the hydrostatic equilibrium equation we have
+
+$$
+-\frac{d P}{d r}=\frac{G M r^{3}}{R^{3}} \frac{3 M}{4 \pi R^{3}} \frac{1}{r^{2}} .
+$$
+
+Integrating from the centre to the surface we then get
+
+$$
+P_{c}=\int_{0}^{R} r d r \frac{3 G M^{2}}{4 \pi R^{6}}=\frac{3 G M^{2}}{8 \pi R^{4}} .
+$$
+
+For the Sun, $M_{\odot} \simeq 2 \times 10^{30} \mathrm{~kg}, R_{\odot} \simeq 7 \times 10^{8} \mathrm{~m}$ (so $\bar{\rho} \simeq 1400 \mathrm{~kg} \mathrm{~m}^{-3}$ ), giving
+
+$$
+P_{c} \simeq 1.4 \times 10^{14} \mathrm{Nm}^{-2} .
+$$
+
+For a realistic $\rho(r)$ decreasing outwards, $P_{c}$ is even higher. Such pressures must therefore exist at the centres of stars to support them against their own self gravity. We should next consider how these pressures are produced.
+
+## Thermal Gas Pressure
+
+In a gas at temperature $T$ the particles (mass $m$ ) have mean kinetic energy
+
+$$
+(1 / 2) m<v^{2}>=(3 / 2) k T
+$$
+
+Momentum transfer through collisions then produces a pressure given, for an ideal gas, by the perfect gas law
+
+$$
+P=n k T=\frac{k}{m} \rho T,
+$$
+
+where $n$ and $\rho$ are the particle number density and the mass density, respectively.
+The relationship between $P$ and $\rho$ (and in this case $T$ ) is called the equation of state. Provided we have an ionized gas (plasma), the perfect gas law still holds at the very high densities calculated above.
+Assuming a star to be made entirely of ionized hydrogen the mean particle mass $m=\left(m_{e}+m_{p}\right) / 2 \simeq$ $m_{p} / 2$. (If we include helium this increases to about $0.62 m_{p}$ ). Using the central pressure calculated for a homogeneous sphere and the perfect gas law we get a central temperature
+
+$$
+T_{c} \simeq \frac{m}{k} \frac{P_{c}}{\bar{\rho}} \simeq \frac{m}{k} \frac{G M}{2 R} \sim 6 \times 10^{6} \mathrm{~K} .
+$$
+
+Note that at these temperatures $(3 / 2) k T \sim 1 \mathrm{keV}>>13.6 \mathrm{eV}$, so the hydrogen is indeed ionized. They are also high enough for thermonuclear fusion reactions to occur.
+
+## Radiation Pressure
+
+A photon with energy $h v$ carries momentum $h v / c$ and therefore exerts pressure through the transfer of this momentum when photons are absorbed or scattered. For a black body we know that the flux (of energy of photons) passing through unit area of a surface is $\sigma T^{4}$. Thus we would expect a pressure (flux of momentum) $\sim \sigma T^{4} / c$.
+Specifically, for an isotropic radiation field this becomes
+
+$$
+P_{r a d}=\frac{4}{3} \frac{\sigma T^{4}}{c} \equiv \frac{1}{3} a T^{4} .
+$$
+
+At $T \sim 10^{7} \mathrm{~K}, P_{r a d} \sim 3 \times 10^{12} \mathrm{Nm}^{-2} \sim P_{c} / 50$. However, as $T$ increases, $P_{\text {rad }}$ may dominate.
+
+## Degeneracy Pressure
+
+Degeneracy pressure is a quantum mechanical effect, important at very high densities. It occurs because the Pauli exclusion principle allows only one electron per quantum state (or 2 per energy state, as the electron has a choice of two spin states). The number of available states per unit volume is limited for a confined set of particles. The exclusion principle thus prevents the particles being too close together and therefore acts as a pressure.
+The Heisenberg uncertainty principle relates position and momentum uncertainties (in 1-D) through $\Delta x \Delta p>h$. If a particle is constrained in a very small volume then its momentum must be large. In 3-D this means that we can only have 2 electrons in a 6-dimensional phase-space element defined by $4 \pi r^{2} d r \times 4 \pi p^{2} d p=h^{3}$.
+Thus the (physical) space density of particles with momentum $p$ to $p+d p$ is limited to
+
+$$
+d n=2 / 4 \pi r^{2} d r=8 \pi p^{2} d p / h^{3}
+$$
+
+The total density of particles with momentum less than $p$ is then just the integral of this, i.e.
+
+$$
+n=\frac{8 \pi p^{3}}{3 h^{3}}
+$$
+
+for completely degenerate gas.
+As before, pressure is the same as rate of momentum transfer, $p n v \propto p^{2} n$ for non-relativistic particles or $p n c \propto p n$ for relativistic particles.
+But from above, $n \propto p^{3}$ so we have a degeneracy pressure $P_{d} \propto p^{5}$ in the non-relativistic case or $\propto p^{4}$ for the relativistic one.
+Finally, since $\rho \propto n \propto p^{3}$, this implies that non-relativistic degenerate matter will have
+
+$$
+P_{d}=A_{1} \rho^{5 / 3}
+$$
+
+while relativistic degenerate matter has
+
+$$
+P_{d}=A_{2} \rho^{4 / 3}
+$$
+
+for some constants $A_{1}$ and $A_{2}$.
+Notice particularly that there is no dependence on temperature. Thus degenerate stars will not change their size as they cool.
+Electron degeneracy pressure is important in the very dense white dwarf stars. Since collisions tend to equalise the energy ( $m \nu^{2}$ ) of particles in a gas, the much more massive neutrons will have higher momentum $(m v)$ by a factor $\sqrt{m_{n} / m_{e}}$. They will therefore occupy a $\left(m_{n} / m_{e}\right)^{3 / 2}$ times larger volume in momentum space than the electrons, so neutron degeneracy will only set in when the number density is about $10^{5}$ times higher than for electron degeneracy. This occurs in neutron stars.
+
+## Energy Sources in Stars
+
+As a star shines it is losing energy at a rate equal to its luminosity $L$. If it has a lifetime $\tau$ it must have available an energy source $E=\tau L$. From estimates of the age of the Earth, we know that the Sun must be at least 4.6 Gyr old $\left(1.5 \times 10^{17} \mathrm{~s}\right)$. This requires $E_{\odot}>6 \times 10^{43} \mathrm{~J}$.
+Consider first gravitational energy. As the separation of two masses $m_{1}$ and $m_{2}$ is reduced from infinity to $r$, gravitational potential energy
+
+$$
+E_{G}=\frac{G m_{1} m_{2}}{r}
+$$
+
+is released. In the same way, if a star of mass $M$ is formed by the collapse of a very large cloud down to radius $R$ the energy released is
+
+$$
+E_{G}=\alpha \frac{G M^{2}}{R}
+$$
+
+where $\alpha$ is a constant which depends on the density distribution in the star.
+If the density is uniform, $\alpha=3 / 5$. Thus for the Sun we have an approximate energy supply
+
+$$
+E_{G} \simeq \frac{3}{5} \frac{6.67 \times 10^{-11}\left(2 \times 10^{30}\right)^{2}}{7 \times 10^{8}} \sim 2 \times 10^{41} \mathrm{~J}
+$$
+
+about 300 times too small.
+
+## Nuclear Energy
+
+A general atomic nucleus consists of $Z$ protons and $N$ neutrons. $Z$ is the atomic number and the number of nucleons, $A=Z+N$, is the mass number. For light nuclei, $N \simeq Z$.
+In the nuclear shell model, the protons and neutrons fill up parallel sets of energy levels, in a similar way to the electrons in shells outside the nucleus. The binding energy of a nucleus is
+
+$$
+B=\left(Z m_{p}+N m_{n}-M_{Z}^{A}\right) c^{2}
+$$
+
+where $M_{Z}^{A}$ is the total mass of the nucleus. $B$ is usually given in MeV and is the amount of energy needed to pull the nucleus apart. For comparing the stability of nuclei, the binding energy per nucleon $B / A$ is more useful.
+Two forces are important in nuclei, the strong nuclear force and the electrostatic force. The strong force is atractive and applies between all nucleons. As its name implies it is stronger than other forces on nuclear scales, but is very short range, $\sim 10^{-15} \mathrm{~m}$ (smaller than one large nucleus).
+The strong force also saturates, in the sense that a nucleon can only bind to a limited number of others around it. In dense nuclear matter all bonds will be saturated so we would expect $B / A$ to tend to a constant value, as seen for heavy nuclei. On the other hand, for light nuclei, there are unused bonds so additional nucleons can be pulled in closer. $B / A$ should therefore increase with $A$. The electrostatic (Coulomb) force is repulsive (all positive charges) but effects only the protons. It is weak but extends to all scales. Its contribution to the binding energy works like gravitational potential,
+
+$$
+B \sim-\frac{3}{5} \frac{Z^{2} e^{2}}{4 \pi \epsilon_{0} R}
+$$
+
+for a nucleus of size $R$.
+The density of nucleons is rougly constant so $R \propto A^{1 / 3}$. Also, until we reach very heavy nucleons $Z \simeq A / 2$. Therefore
+
+$$
+\frac{B}{A} \propto-\frac{Z^{2}}{A^{4 / 3}} \propto-A^{2 / 3}
+$$
+
+In heavy nuclei $Z$ does not increase as fast as $A$, so $B / A$ is reduced.
+The opposing effects of the two forces produce a peak in $B / A$ for moderately heavy nuclei, specifically at $A=56$, i.e. iron. $\mathrm{Fe}_{26}^{56}$ is the most stable nucleus.
+This implies that energy will be released if nuclei up to Fe are synthesised from lighter ones (nuclear fusion) and will also be released if nuclei heavier than Fe are split into two lighter ones (nuclear fission).
+Stars are mostly hydrogen and helium , so fusion is potentially important for supplying their energy output but fission is not. For fusion to occur, the electostatic repulsion between the two light nuclei must be overcome.
+This is possible in stars because of the very high thermal energies of the nuclei; thermonuclear fusion. Bigger nuclei have more coulomb repulsion between them, so higher temperatures are required for fusion. This is important for understanding stellar evolution (see later in the course). The most important fusion reactions in stars are as follows.
+
+## Hydrogen Burning
+
+The net effect of hydrogen burning is to turn four protons into a helium nucleus
+
+$$
+4 \mathrm{H}_{1}^{1} \rightarrow \mathrm{He}_{2}^{4}+2 e^{+}+2 v_{e}
+$$
+
+where $e^{+}$represents a positron and $v_{e}$ is an electron neutrino. This occurs at a temperature $T_{H} \sim$ $10^{7} \mathrm{~K}$ and is the energy source for main sequence stars; the net result in each case is the release of 26.7 MeV per $\mathrm{He}^{4}$ nucleus produced.
+
+However, it does not proceed by the direct fusion of four protons (as it is unlikely that four will all arrive at the same point at the same time), but by successive addition. Several chains of reactions are important.
+The first are the PP (proton-proton) chains. In this case $\mathrm{He}^{4}$ is built up via deuterium and $\mathrm{He}^{3}$ (PP I), or via the prodution of $\mathrm{Be}^{7}$ and then either $\mathrm{Li}^{7}$ (PP II) or $\mathrm{B}^{8}$ (PP III).
+
+PP I dominates at $T<1.4 \times 10^{7} \mathrm{~K}$ and only $2 \%$ of the avaailable energy is lost to the neutrinos (average energy 0.26 MeV ). PPII dominates at 1.4 to $2.7 \times 10^{7} \mathrm{~K}$ and has losses of $4 \%$ to the neutrinos (the average energy of the neutrino arising from the production of $\mathrm{Li}^{7}$ is 0.8 MeV ). Finally, the PP III chain dominates above $2.3 \times 10^{7} \mathrm{~K}$, but with $28 \%$ of the energy going into neutrinos $(7.2 \mathrm{MeV}$ for the neutrino emitted by the $\mathrm{Be}^{8}$ decay).
+The CNO cycle (sometimes called the CNO bi-cycle) is rather different in that it uses existing carbon nuclei in the build up of the helium, though they are not 'used up', being returned at the end after processing through oxygen and nitrogen isotopes. Neutrinos produced at various stages all have energies $\sim 1 \mathrm{MeV}$ so the net energy loss is $6.4 \%$.
+Since 26.7 MeV is produced per 4 protons, this amounts to $0.7 \%$ of the original rest mass $4 m_{p} c^{2}$. The energy available from $1 M_{\odot}$ is therefore
+
+$$
+E_{n u c}=\frac{M_{\odot}}{4 m_{p}} \times 26.7 \times 1.6 \times 10^{-12} \simeq 1.3 \times 10^{45} \mathrm{~J}
+$$
+
+Even if only $10 \%$ of the mass of a star like the Sun is used up in hydrogen burning on the main sequence this is enough to fuel it for $\simeq 10^{10}$ years, easily covering the age of the Solar System.
+
+## Helium Burning
+
+The next basic process is the conversion of three helium nuclei to one carbon. The first two $\mathrm{He}_{2}^{4}$ give a $\mathrm{Be}_{4}^{8}$ and although most of these decay back, a few live long enough to fuse with another $\mathrm{He}_{2}^{4}$ to give $\mathrm{C}_{6}^{12}$. This operatures at temperatures $T \sim 10^{8} \mathrm{~K}$ and is a main energy source in red giants, producing 7.65 MeV per C nucleus formed.
+
+## Carbon Burning
+
+The simplest reaction is just the fusion of two $\mathrm{C}_{6}^{12}$ to give $\mathrm{Mg}_{12}^{24}$. It requires much higher temperatures, $T \sim 2 \times 10^{9} \mathrm{~K}$ in order to instigate. It therefore only occurs in massive stars, late in their lives.
+There are also carbon burning processes at slightly lower temperatures ( $>8 \times 10^{8} \mathrm{~K}$ ) which produce oxygen, neon and sodium. Note that these differ from the CNO cycle in that the carbon is used up as fuel, not merely used as a catalyst.
+Even heavier elements (up to iron) can be produced in nuclear fusion at yet higher temperatures in stars of mass 5-20 $M_{\odot}$.
+
+## Stability of Energy Generation
+
+In equilibrium, we require that the power generated in the core is equal to that radiated from the surface. But the energy generation rate is very temperature dependent, so the temperature in the core must self-regulate.
+
+In normal stars (supported by thermal pressure), if the energy generation rate rises above the equilibrium value, the core temperature rises, so the pressure rises. The core therefore expands and cools, lowering the energy generation rate again. Hence the equilibrium is restored (stable).
+In degenerate stars, if the energy generation rises, the core temperatue again rises, but this has no effect on the degeneracy pressure. Thus there is no expansion or cooling.
+However, the increased temperature will lead to more energy generation, so there is a runaway thermonuclear explosion (e.g. the 'helium flash' at the onset of helium burning in the degenerate cores of low mass post-main sequence stars).
+Stable thermonuclear energy generation is therefore not possible in degenerate stars.
+
+# Stellar Evolution
+
+The overall scheme of things is cyclical. Interstellar gas clouds contract until the hydrogen at the core is hot enough for nuclear fusion and a main sequence star is formed. When the central hydrogen has been exausted, the star can burn hydrogen further out, in a shell, and/or helium in the core, becoming a post-main sequence star (e.g. red giant).
+Low mass stars then lose their outer envelopes relatively quietly evolving into planetary nebulae (PN), while high mass stars lose their outer layers explosively in a supernova (SN).
+The remaining remnant of the PN phase is a white dwarf and that of a SN is a neutron star (or possibly black hole). In both cases, the mass lost from the original star is recycled back into the interstellar medium (ISM), but now enriched in heavy elements (the supernovae being responsible for the heaviest elements).
+
+## Star Formation
+
+Stars form from interstellar gas clouds which collapse under gravity. Small clouds can support themselves against gravity, but larger ones - where the inward gravitational force exceeds the outward pressure force (the Jeans criterion) - will be unstable to collapse.
+For typical ISM densities, the mass for instability can be much greater than typical stellar masses, and magnetic fields threaded through the gas will also oppose collapse of charged particles. Thus the collapse may need to be triggered, for instance by a shock wave from a supernova passing through the gas and increasing the local density.
+Once some stars have formed more triggering may take place, so that star formation propagates through a larger region. As higher mass regions are more unstable to collapse, individual stars may fragment out of a larger, already collapsing, cloud, thus forming a cluster of stars.
+
+## Phases During Star Formation
+
+The initial phase of the collapse is dominated by gravity, so is called the free-fall phase. This has a timescale $t_{f f} \simeq 1 / \sqrt{G \rho} \sim 10^{5} \mathrm{yrs}$. The gas is still fairly cool and will radiate in the infra-red - a proto-star.
+As the thermal pressure builds up the star will collapse more slowly, in near hydrostatic equilibrium. Gravitational potential energy is liberated, half of which is radiated away, the rest going into heating the gas - a pre-main sequence star.
+Conservation of angular momentum (and the effects of magnetic fields) will leave a disc around the forming star, again potentially detectable as an infra-red source. We may also observe bi-polar molecular outflows from young stellar objects (YSOs). Denser knots in these outflows are called Herbig-Haro objects. If the surrounding gas and dust is burned off we see a T Tauri star.
+Eventually, when the temperature at the centre of the cloud reaches about $10^{7} \mathrm{~K}, \mathrm{H}$ burning begins. The star is then on the Zero Age Main Sequence (ZAMS).
+
+As stars generally form in clusters, such clusters will contain a few massive stars with $M \geq 10 M_{\odot}$. These form an OB association. These massive stars have main sequence lifetimes less than a few million years. They also have temperatures above 20000 K and emit strongly in the ultra-violet. Surrounding gas will absorb UV photons and become ionized.
+As the protons and electrons recombine they will emit hydrogen lines, particularly the Balmer lines $\mathrm{H} \alpha$ etc. This luminous gas around hot young stars (e.g. the Orion Nebula) is called an HII region. (Recall from Astrophysical Concepts that HI is neutral hydrogen and HII is ionized hydrogen. For heavier ions, OIII, for instance, is twice ionized oxygen and FeXXVI is iron with 25 electrons removed).
+A shock wave from the expansion of the HII region surrounding an OB association may trigger further star formation. This is seen in the Orion region, where there is a progression of star clusters of different ages across the whole area, the most recent sitting next to a region of unused molecular gas.
+
+## Main Sequence Stars
+
+For a cloud or star contracting in a quasi-equilibrium state
+
+$$
+2 E_{\text {thermal }}=-U_{\text {grav }},
+$$
+
+an example of the Virial Theorem. Thus, as noted above, as a star contracts half of the change in the gravitational potential $\Delta U$ goes into increasing the thermal energy (i.e. the temperature) and the other half has to be radiated away.
+Hydrogen burning requires a temperature of $10^{7} \mathrm{~K}$ and this is only reached if $M \geq 0.08 M_{\odot}$. Thus this is the minimum mass for a main sequence star (about 80 times the mass of Jupiter). Smaller masses continue to contract slowly as brown dwarfs.
+The hydrogen burning in the core (where the temperature and pressure are highest) generates energy which replace that radiated away at the surface so the contraction stops and the star settles onto the main sequence.
+The energy is transported to the surface by radiation (i.e. a slow diffusion of photons through the opaque plasma) or by convection (the bulk motion of the gas). Convection is important in the outer regions of stars like the Sun and the core regions of massive stars. It is also dominant in pre-main sequence stars and some phases of post main sequence stars, where it can mix material from different levels.
+Hydrogen burning continues in the core until all the fuel there has been converted to helium. This typically uses up $10 \%$ of the mass of the star. The star then moves off the main sequence.
+
+## Post Main Sequence Evolution
+
+When hydrogen burning ceases in the core, the star contracts in order to release gravitational energy to match that radiated away.
+The contraction also heats the star so hydrogen burning turns on in the shell of hydrogen outside what is now a helium core.
+This new structure causes the envelope of the star to expand, eventually turning it into a red giant, being cooler, but more luminous than before. The detailed evolution depends on the mass of the star. Consider two examples.
+
+## A $5 M_{\odot}$ Star
+
+As the hydrogen in the core is used up the star initially expands at roughly constant surface temperature. After the hydrogen shell burning is established and then starts to move outwards as more fuel is consumed, the core collapses further but the envelope expands, making the surface even cooler and now reducing the luminosity.
+
+Eventually convection develops in the envelope and carries the energy to the surface faster, increasing the luminosity. This is the start of the red giant phase.
+Temperatures in the core continue to rise as it contracts further, so helium burning is able to start. The interplay between helium burning in the core and hydrogen burning in the envelope gradually shifts in favour of the helium burning and the star becomes hotter and brighter. When the helium in the core is exhausted the star develops a helium burning shell and moves back towards the red but is now a supergiant.
+
+## A $1 M_{\odot}$ Star
+
+During core hydrogen burning the temperature in the core increases slightly, also increasing the energy output, i.e. the luminosity. After the core hydrogen is used up, the hydrogen burning moves outwards.
+This heats the surrounding envelope, which expands, the surface layers thus actually becoming cooler. Convective layers develop, greatly increasing the luminosity and moving the star onto the red giant branch.
+Further contraction and heating of the core first turns it into a degenerate gas and then leads to helium burning. Because the degeneracy pressure does not increase and lead to expansion as the core heats further, energy production becomes even stronger producing a brief 'helium flash'.
+Helium core burning and hydrogen shell burning then continue, at reduced luminosity, the star now being a subgiant. When the helium burning ends in the core, a helium shell burning stage is reached and the star returns to being a red giant, but now on what is called the asymptotic giant branch (AGB).
+The shell helium burning is very temperature dependent and this causes the star to become unstable and become a variable. Luminosity changes of $20 \%$ to $50 \%$ can occur in timescales of a few years. Pulsations lead to loss of the surface layers, revealing the much hotter interior. The blown off layers form a planetary nebula (PN). The central star, made mostly of degenerate carbon, cools over a period $\sim 10^{5}$ years to become a white dwarf.
+
+## Chemical Composition
+
+A general (and simplified) overview of stellar evolution is therefore the alternation between thermonuclear burning - with constant temperature but changing composition - and gravitational contraction - with rising temperature but fixed composition.
+Details of stellar evolution will depend on the chemical composition of the stars. Low $Z$ stars will evolve to slightly different places in the H-R diagram to high $Z$ stars. The low $Z$ main sequence is slightly below the high $Z$ one and low $Z$ stars also define a 'horizontal branch' when helium burning, but the general pattern is the same.
+Clusters of stars should all have been born at the same time and with the same $Z$. Calculating the evolutionary tracks for a range of masses up to a fixed time gives loci in the H-R diagram called isochrones. These can then be fitted to the observed distribution of stars in a given cluster.
+
+## White Dwarfs
+
+These are moderate mass stars (e.g. Sirius' companion Sirius B with $M=1.05 M_{\odot}$ ), but with very high temperatures ( $\sim 30000 \mathrm{~K}$ ) and very low luminosities $\left(\sim 3 \times 10^{-3} L_{\odot}\right)$ - hence their position in the H-R diagram. These values imply radii $\sim 7 \times 10^{-3} R_{\odot} \sim 5000 \mathrm{~km}$ and therefore a density $\sim 3 \times 10^{9} \mathrm{~kg} \mathrm{~m}^{-3}$.
+They are therefore degenerate and supported by electron degeneracy pressure. It can be shown (see below) that this can only stabilise stars against their self gravity up to a maximum mass (the Chandrasekhar Limit) of $1.4 M_{\odot}$.
+
+Since white dwarfs are seen in young open clusters, these (at least) must have evolved from much more massive stars (low mass stars having long lifetimes). This requires massive stars to shed their outer layers at the end of their nuclear burning lifetimes (the mass lost being visible for some time as a planetary nebula).
+Since degeneracy pressure is independent of temperature, white dwarfs will cool along tracks of constant radius in the $\mathrm{H}-\mathrm{R}$ diagram (i.e. $L \propto T^{4}$ ). They have typical cooling times $\sim 10^{9} \mathrm{yr}$. From hydrostatic equilibrium we have approximately
+
+$$
+P_{c} \sim \frac{G M \rho}{R}
+$$
+
+and in a non-relativistic degenerate gas $P \propto \rho^{5 / 3}$, so
+
+$$
+\rho^{2 / 3} \propto M / R
+$$
+
+Substituting in $\rho \propto M / R^{3}$ we then have
+
+$$
+\frac{M^{2 / 3}}{R^{2}} \propto \frac{M}{R}
+$$
+
+or
+
+$$
+R \propto M^{-1 / 3} .
+$$
+
+(Notice that this is the opposite of bodies with fixed density, which have $R \propto M^{1 / 3}$ ).
+Thus as $M$ increases, the radius decreases, the density increases, the central pressure increases and therefore the momenta of the electrons has to increase.
+This requires ever increasing velocities so eventually, at high enough mass, these must become relativistic. But in this case we have $P \propto \rho^{4 / 3}$ so going through the same steps as above $\rho^{1 / 3} \propto M / R$ and
+
+$$
+\frac{M^{1 / 3}}{R} \propto \frac{M}{R} .
+$$
+
+But this can only be true for one value of $M$, the upper limit for any sort of (electron) degenerate white dwarf.
+
+## Supernovae
+
+These stellar explosions are extremely luminous, with absolute magnitudes $M_{B}$ around -16 to -20 , the same as a whole small to moderate sized galaxy. Most are seen in external galaxies (e.g. SN1987A in the Large Magellanic Cloud). We expect around 1 every 30 years in our Galaxy, though none has been seen since Kepler's Supernova in 1604. (This is because supernovae primarily occur in the disc of our Galaxy and are usually distant enough to be hidden, optically, by interstellar dust; many supernova remnants can be observed at radio wavelengths).
+Supernovae come in three main types, Ia, Ib and II. Type II supernovae (SNe) have hydrogen lines in their spectra. They are triggered by core collapse in evolved massive (hence recently formed Population I) stars in spiral and irregular galaxies. They have peak luminosities between 0.4 and $4 \times 10^{9} L_{\odot}$ 。
+Type I SNe have no hydrogen lines in their spectra. Type Ia SNe occur in both spiral and elliptical galaxies as a result of the explosion of an older (Population II) white dwarf star. This follows mass transfer from a companion in a binary system taking the white dwarf over the mass limit for stability. All Type Ia SNe thus occur in very similar circumstances and all have peak brightnesses close to $L_{B}=9.6 \times 10^{9} L_{\odot}$, making them excellent standard candles for distance estimation.
+The rarer Type Ib SNe appear to occur only in spirals and may be associated with the end point of the evolution of the most massive stars (above about $60 M_{\odot}$ ) which have lost their hydrogen envelope before the core collapses.
+
+## Core Collapse SNe
+
+Stars with masses between 10 and $60 M_{\odot}$ go through the full range of nuclear burning phases and end up with an iron core at $T_{c} \sim 5 \times 10^{9} \mathrm{~K}$ (contraction is not halted by degeneracy pressure). When no further nuclear burning is possible, the core suddenly loses energy via two processes. One is the photodisintegration of nuclei. At the temperatures encountered in the core, the black body photons ( $\gamma$-rays) have sufficient energy to break up nuclei,
+
+$$
+\gamma+\mathrm{Fe}_{26}^{56} \rightarrow 13 \mathrm{He}_{2}^{4}+4 n-\text { energy }
+$$
+
+and
+
+$$
+\gamma+\mathrm{He}_{2}^{4} \rightarrow 2 p+2 n-\text { energy. }
+$$
+
+The other is 'neutronisation'. Electrons in the core have sufficient energy for
+
+$$
+e+p \rightarrow n+v_{e}
+$$
+
+the neutrinos then escaping from the star and carying away energy.
+As a result of the energy losses, the core collapses reaching the density of nuclear matter, $\sim 10^{17} \mathrm{~kg}$ $\mathrm{m}^{-3}$, and a neutron star is formed.
+This liberates energy equivalent to its binding energy, $\sim G M^{2} / R \sim 2 \times 10^{46} \mathrm{~J}$ for a $1 M_{\odot}$ neutron star of radius 15 km , most of it in neutrinos. Around $10^{44} \mathrm{~J}$ goes into mechanical energy of the ejecta and $10^{42}$ to $10^{43} \mathrm{~J}$ in to photons.
+Collapse of the core leaves the envelope unsupported. This falls in and is heated rapidly to $10^{9} \mathrm{~K}$. The envelope gas has not been through nuclear processing so is still mainly hydrogen and helium. The heating then leads to a thermonuclear explosion involving many simultaneous production chains. The envelope then bounces off the core, driven by the intense neutrino burst, to form an expanding remnant.
+SN1987A in the LMC gave direct observational support for this model. A neutrino burst was observed by two detectors on Earth about 3 hours before the SN was seen (the delay being the time for the shock wave to reach the star's surface).
+Also, the nuclear burning in the envelope should produce radioactive $\mathrm{Ni}_{28}^{56}$ which decays to $\mathrm{Co}_{27}^{56}$ and then $\mathrm{Fe}_{26}^{56}$. The fall-off in the light curve of 1987A matches the decay time of $\mathrm{Co}^{56}$ and specific cobalt emission lines at 847 keV and 1238 keV were seen in the $\gamma$-ray spectrum.
+
+## Neutron Stars and Pulsars
+
+As above, we expect that Type II SN explosions should produce a neutron star remnant supported by neutron degeneracy pressure. Theoretical models suggest that these can be up to about $3 M_{\odot}$ (nuclear forces between the neutrons complicate the situation), but measured masses are all close to $1.4 M_{\odot}$. Given the density of nuclear material, radii should be in the range $10-17 \mathrm{~km}$. The luminosity is therefore very small making neutron stars hard to detect.
+However, in 1967 Jocelyn Bell and Tony Hewish discovered rapidly pulsating radio sources, or pulsars. These are found with periods of a few seconds down to milliseconds. They are incredibly precise 'clocks' but slow down slightly over time.
+A few are found in SN remnants (e.g. the Crab and Vela pulsars), supporting the model of pulsars as rotating neutron stars. The radiation we see (in both the radio and optical) is due to a beam emitted along the magnetic axes of the stars, the pulsations then being due to a 'light house effect' as the beam sweeps across the direction to the Earth. This requires the magnetic axis to be misaligned with the rotation axis.
+Note that rotation at the very short periods observed requires neutron star densities. Consider a particle of mass $m$ on the equator of a star, mass $M$, radius $R$, rotating at angular velocity $\omega$. For the star's gravity to supply sufficient force to keep the particle in a circular orbit at $R$
+
+$$
+\frac{G M m}{R^{2}}>m R \omega^{2}
+$$
+
+$$
+\frac{G M}{R^{3}}>\omega^{2}
+$$
+
+But $N=4 \pi R^{3} \rho / 3$ and $\omega=2 \pi / T$ so
+
+$$
+\rho>\frac{3 \pi}{G T^{2}} .
+$$
+
+For $T \simeq 1 \mathrm{~ms}, \rho \geq 10^{17} \mathrm{~kg} \mathrm{~m}^{-3}$.
+Neutron stars are also the source of X-ray binary sources, the X-rays arising from accretion of material onto the neutron star from its companion. In the Galaxy there are two types, high mass X-ray binaries (HMXBs) in young systems and low mass X-ray binaries (LMXBs) in Population II systems.
+
+# Stellar Activity
+
+By stellar activity, we mean transient phenomena on the surfaces of stars. These are usually associated with magnetic fields and the build up and release of magnetic energy. We see these phenomena in more detail on the Sun since it is so much closer than any other star.
+
+## The Structure of the Sun
+
+Starting from the outermost, least dense regions, we have first the corona. This is composed of tenuous gas at $T \sim 10^{6} \mathrm{~K}$ and is visible optically during a solar eclipse. The temperature decreases as we move in, reaching a minimum at the chromosphere. Just below this is the photosphere, the edge of the visible disc of the Sun, at $T \simeq 5800 \mathrm{~K}$
+Under the visible surface, there is a turbulent layer where energy transport is by convection, and under the convective layer is the radiative layer, where energy transport is via radiation. Finally at the centre is the nuclear burning core.
+We can image different layers of the Sun using radiation at different wavelengths since these are emitted or absorbed differently.
+Recall from Astrophysical Concepts, the idea of 'optical depth'. If radiation of intensity $I_{0}$ is incident on one side of a slab of material of thickness $x$ then the emergent intensity is $I=I_{0} e^{-\tau}$ where $\tau$ is the optical depth ( $=\kappa x$ if $\kappa$ is the absorption coefficient). However, the material in the slab will also be emitting (black bodies are both perfect absorbers and perfect emitters).
+Thus, roughly speaking, we will see radiation from the layer 1 optical depth down (i.e. where $\tau \simeq 1$ ): nearly all the radiation from lower down is absorbed before it can escape while there is little radiation emitted further up
+If absorption is strong (as in absorption lines) then we reach $\tau=1$ for a thinner layer. Thus at the wavelength of lines like $\mathrm{H} \alpha$ we see higher layers in the Sun.
+Optical images show the photosphere because the corona is almost transparent to visible light (i.e. optically thin) while the photosphere is optically thick to visible radiation. The photosphere appears patchy due to uneven heating by convection cells in the layer below.
+Radio images show the corona because it is opaque to radio waves beause of plasma oscillations. No transmission is possible at frequencies below the plasma frequency
+
+$$
+v_{p}=9 n_{e}^{1 / 2} \mathrm{~Hz}
+$$
+
+where $n_{e}$ is the plasma electron density (in $\mathrm{m}^{-3}$ ).
+X-ray images also show the corona (although it is transparent to X-rays) since the regions lower down are too cool to produce X-rays.
+
+## Ionized Gas in Magnetic Fields
+
+Charged particles move in helical orbits about magnetic field lines because of the $\underline{B} \times \underline{v}$ force. Thus ionized gas can move freely along field lines but only diffuses slowly across them.
+A magnetic field $B$ has an energy density $B^{2} / 2 \mu_{0}$, where $\mu_{0}$ is the permeability of free space, while the moving plasma will have energy density $\rho v^{2} / 2$. If the magnetic field density is larger,
+
+$$
+B^{2}>\mu_{0} \rho v^{2}
+$$
+
+the field will contain the plasma, otherwise the plasma will distort the field.
+
+## The Magnetic Field of the Sun
+
+The Sun has a dipole field with average strength $\sim 10^{-4} \mathrm{~T}$. It is probably generated by the dynamo process, by electric currents in the solar interior. It is distorted by the differential rotation of the Sun and by convective cells.
+The field varies in strength with a 22 year period, reversing direction every 11 years (at 'Solar minimum').
+
+## Sunspots
+
+Sunspots are cooler regions of the photosphere ( $\sim 3800 \mathrm{~K}$ ) which therefore appear as dark regions. They contain strong magnetic fields ( $\sim 0.3 \mathrm{~T}$ ) and generally occur in pairs with the field emerging from one ( N pole) and entering the other ( S pole).
+The polarity of the leading spot (in terms of the rotation direction) is opposite in the two hemispheres and reverses with the field reversal. Spots are cooler than their surroundings because strong magnetic field inhibits convection in the layer below the spot.
+Typical spots last $2-4$ weeks. The rotation of the Sun (period $\sim 27$ days near the equator) carries the spots across the face of the Sun. The number of sunspots visible at any one time varies in the same 11 year cycle as the dipole field. The preferred latitude of occurrence also varies, changing from around $\pm 30^{\circ}$ just after minimum to $\pm 15^{\circ}$ at maximum and $\pm 8^{\circ}$ just before the next minimum. This leads to the 'butterfly diagram' showing the spots positions as a function of time.
+
+## The Solar Corona and Solar Wind
+
+The very hot $\left(10^{6} \mathrm{~K}\right)$ coronal gas is probably heated by one or both of magnetohydrodynamic waves or magnetic reconnection events (where tangled magnetic fields reconnect into a lower energy configuration).
+The corona is continuously expanding (i.e. it is not stable) and as particles escape from the Sun they become the Solar Wind.
+X-ray images of the Sun show the corona to be very non-uniform, consisting of bright regions where the material is trapped by magnetic loops and darker regions (coronal holes) where the corona is escaping along open field lines.
+
+## Solar Flares
+
+Flares are intense bursts of radiation at all wavelengths from a small region of the Sun. They occur in the lower corona and are probably caused by sudden release of magnetic energy by reconnection above a coronal loop.
+This results in large currents heating the plasma to $10^{7} \mathrm{~K}$ and the acceleration of electrons and nuclei to high energies.
+Some of these particles escape (e.g. to reach the Earth), travelling along field lines. Others travel downwards to 'foot points', losing energy via collisions with gas at the surface of the Sun, producing
+
+X -rays and $\gamma$-rays. Interaction of the high energy (relativistic) electrons with the magnetic field produces radio emission through the synchrotron process (as in particle accelerators).
+
+## Activity on Other Stars
+
+Several types of star are observed to have activity. For instance, low mass M dwarf stars show intense optical flares coincident with radio bursts.
+RS CVn stars (named after their prototype) are tidally locked binaries, probably also magnetically linked. They show very strong radio flares and optical variations consistent with rotation of very large sunspot regions across the face of the star.
+High resolution imaging of nearby red giants (e.g. Betelgeuse) show direct evidence for brightness variations across the surface of the star.
+
+# Binary Stars
+
+As we saw earlier, about $60 \%$ of stars are in binary systems. Their binary nature may be revealed in several ways. Firstly, for visual binaries, we can directly observe both components and we can relate their separations and orbital periods to the masses of the two stars.
+Unless observing from space, this requires their angular separation to be at least $1^{\prime \prime}$ (because of atmospheric blurring, or 'seeing'). Since most stars are at least 10pc away, this requires separations of 10AU or more, so for typical masses of order a solar mass, our standard equation
+
+$$
+\left(M_{1}+M_{2}\right) T^{2}=\left(r_{1}+r_{2}\right)^{3}
+$$
+
+implies $T^{2}>500$ or $T>22$ yr. For many binary stars the periods are greater than 100 years.
+
+## Spectroscopic Binaries
+
+At smaller separations the binary nature can be revealed by the periodic Doppler shift of the spectral lines from the stars. Consider a star in a circular orbit which is edge on to the observer (i.e. inclination angle $i=90^{\circ}$ ). If the star orbits at speed $v_{1}$, the Doppler shift will vary over the orbit as
+
+$$
+z_{1}=\frac{\Delta \lambda}{\lambda}=\frac{v_{1} \cos \theta}{c}
+$$
+
+where $\theta$ is the angle between the line of sight and the velocity vector of the star at any given point of its orbit. Thus
+
+$$
+(\Delta \lambda)_{\max }=\frac{\lambda v_{1}}{c}
+$$
+
+but as $v_{1}=2 \pi r_{1} / T$ we have
+
+$$
+r_{1}=\frac{v_{1} T}{2 \pi}=\frac{c T}{2 \pi \lambda}(\Delta \lambda)_{\max }
+$$
+
+If spectral lines from both stars are visible then $r_{1}$ and $r_{2}$ can be determined and the system analysed as for a visual binary. Note that it is not necessary to know the distance to the system.
+Elliptical orbits distort the cosine curve but the system parameters can still be found if $i=90^{\circ}$. For an orbit inclined at an unknown angle
+
+$$
+r_{1}=\frac{c T}{2 \pi \lambda} \frac{(\Delta \lambda)_{\max }}{\sin i}
+$$
+
+and we can determine only $M_{1} \sin ^{3} i$.
+
+## Eclipsing Binaries
+
+When $i=90^{\circ}$ the stars will periodically eclipse each other (from our viewpoint). Unless the two stars happen to be equal in size, the smaller star will block out only part of the light from the larger one (annular eclipse), but will itself be completely hidden when it is eclipsed.
+In general we will see unequal depth eclipses in the overall light curve of the system. If the two stars have individual fluxes at the Earth $F_{1}$ and $F_{2}$, then (assuming 2 to be the smaller star) we will see fluxes $F=F_{1}+F_{2}$ out of eclipse, $E_{2}=F_{1}$ during the secondary eclipse and
+
+$$
+E_{1}=F_{2}+F_{1}\left(\frac{\pi R_{1}^{2}-\pi R_{2}^{2}}{\pi R_{1}^{2}}\right)
+$$
+
+during the primary eclipse.
+The ratio of eclipse depths is then
+
+$$
+\begin{aligned}
+& \frac{F-E_{1}}{F-E_{2}}=\frac{F_{1}+F_{2}-F_{2}-F_{1}\left(R_{1}^{2}-R_{2}^{2}\right) / R_{2}^{2}}{F_{2}} \\
+= & \frac{F_{1} R_{2}^{2}}{F_{2} R_{1}^{2}}=\frac{L_{1} R_{2}^{2}}{L_{2} R_{1}^{2}}=\frac{4 \pi R_{1}^{2} \sigma T_{1}^{4}}{4 \pi R_{2}^{2} \sigma T_{2}^{4}} \frac{R_{2}^{2}}{R_{1}^{2}}=\left(\frac{T_{1}}{T_{2}}\right)^{4}
+\end{aligned}
+$$
+
+For either eclipse, label the start of the eclipse (first contact) by $t_{p}$, the time when the secondary is completely behind or in front of the primary as $t_{q}$ and the corresponding events at the end of the eclipse by $t_{r}$ and $t_{s}$. The relative velocity of the two stars across the observers line of sight $v=v_{1}+v_{2}=2 \pi\left(r_{1}+r_{2}\right) / T \equiv 2 \pi a / T$, where $a$ is the separation between the two stars. Hence
+
+$$
+\begin{aligned}
+& t_{s}-t_{p}=2\left(R_{1}+R_{2}\right) / v, \\
+& t_{r}-t_{q}=2\left(R_{1}-R_{2}\right) / v
+\end{aligned}
+$$
+
+allowing us to solve for $R_{1}$ and $R_{2}$ in terms of $a$. Most eclipsing binaries are also spectroscopic binaries, so we know $v$ and hence can determine the radii absolutely.
+
+## Close Binaries
+
+These are systems in which one (or both) stars influences the structure and evolution of the other. Often there is a transfer of mass between the two. Particles in the system move in the joint gravitational potential of the two stars. Surfaces on which this potential has a given value are called equipotential surfaces.
+For a single non-rotating star, equipotentials are spherical. For a single rotating star, centripetal acceleration causes the equipotentials to be ellipsoids (e.g. the shape of the Sun). For two stars in a binary system, there is also the gravitational attraction due to the other star (or equivalently the centripetal acceleration due to the orbital motion).
+Near each star, the equipotentials are pear shaped, pointing towards the other star. For some value of the potential these two surfaces just meet, at what is called the 'inner Lagrangian point', defining the 'Roche lobes' of the system.
+If one star fills its Roche lobe, material from the star can flow through the Lagrange point to the other star. This material will have angular momentum, from its orbital motion, so will not 'fall' directly onto the companion star. Instead it will form a rotating 'accretion disc' around it.
+
+## Accretion Discs
+
+Gas in the accretion disc will move in approximately Keplerian orbits with
+
+$$
+\frac{m v^{2}}{r}=\frac{G M m}{r^{2}} \Rightarrow v^{2} \simeq G M / r
+$$
+
+Since $v$ varies with $r$, viscous effects between the gas at different $r$ cause the gas to be heated. The energy released will be proportional to $M / R_{*}$, where $R_{*}$ is the size of the central star (which determines how small the accretion disc can get). Thus accretion discs around dense, compact objects are hotter than those around larger, less dense objects.
+Accretion discs around white dwarfs lead to optical emission (novae), while those around neutron stars (or black holes) result in X-ray emission (X-ray binaries).
+
+## Novae
+
+A nova (short for stella nova, or new star) is a star which undergoes a large increase in brightness (by factors up to $10^{7}$ ) on a short time scale.
+In many cases outbursts recur. In dwarf novae, the interval between outbursts is only a few weeks, but for more dramatic outbursts the interval can be 100s or 1000s of years.
+Novae are close binary systems with a normal star filling its Roche lobe and overflowing onto a white dwarf via an accretion disc.
+The luminosity emitted by the accretion disc has its origin in the potential energy lost by the gas as it falls into the potential well of the white dwarf.
+
+## X-ray Sources
+
+Most stars, such as the Sun, are only weak X-ray sources. But there are several hundred strong X-ray emitting sources in the Galaxy.
+These are binaries which consist of a normal star filling its Roche lobe and a neutron star plus hot accretion disc.
+Near the neutron star, the strong magnetic field $\left(\sim 10^{8} \mathrm{~T}\right)$ funnels the gas down onto the magnetic poles of the star, forming two X-ray emitting hot spots. These are carried around the star by rotation (if the magnetic axis does not coincide with the rotation axis) leading to variability in the observed X-ray flux.
+In some cases the deduced masses are much more than $3 M_{\odot}$ (e.g. Cygnus X-1 at about $16 M_{\odot}$ ). These are almost certainly too massive to be neutron stars so are presumably black holes surrounded by accretion discs.
+In General Relativity, around any mass $M$ there is an 'event horizon' from within which no matter or radiation can escape. This has the Schwarzschild radius
+
+$$
+R_{s}=\frac{2 G M}{c^{2}}
+$$
+
+(In a simple Newtonian analogue, this would be the radius at which the escape velocity becomes the speed of light).
+Any body which contracts to within its own event horizon becomes a black hole. No known pressure mechanism can hold up a degenerate star of more than about $3 M_{\odot}$, so any such star must collapse to a black hole, hence the conclusion that the most massive X-ray binaries must harbour black holes. Much larger black holes with masses of millions of solar masses or more are believed to be present at the centres of galaxies. Accretion onto these fuels active galactic nuclei (AGN), the most powerful of which are quasars.
+
